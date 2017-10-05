@@ -80,6 +80,51 @@ int getSumOfGreens(UInt8* rgbFrame)
 
         return sum;
 }
+
+int getAvgOfReds(UInt8 * rgbFrame)
+{
+        int n = 50;
+        int i;
+        int sum = 0;
+        length = WIDTH_FRAME * HEIGHT_FRAME;
+        iter = length / n;
+        for (i=0; i<length; i+=iter)
+        {
+                sum += GetRed(rgbFrame[i]); 
+        }
+
+        return (sum/n);
+}
+
+int getAvgOfBlues(UInt8* rgbFrame)
+{
+        int n = 50;
+        int i;
+        int sum = 0;
+        length = WIDTH_FRAME * HEIGHT_FRAME;
+        iter = length / n;
+        for (i=0; i<length; i+=iter)
+        {
+                sum += GetBlue(rgbFrame[i]); 
+        }
+
+        return (sum/n);
+}
+
+int getAvgOfGreens(UInt8* rgbFrame)
+{
+        int n = 50;
+        int i;
+        int sum = 0;
+        length = WIDTH_FRAME * HEIGHT_FRAME;
+        iter = length / n;
+        for (i=0; i<length; i+=iter)
+        {
+                sum += GetGreen(rgbFrame[i]); 
+        }
+
+        return (sum/n);
+}
 // external functions declarations (for PrintTextOnPobLCD)
 extern void InitAsciiBuffer();
 extern void PrintTextOnPobLCD(int row, int col, char *string, UInt8 *Screen_Buffer);
@@ -133,44 +178,32 @@ int     main(void)
                 GrabRGBFrame();
 
                 // Get pixel color:
-
-                i=400;
-                int n;
-                for (n=0; i< 12400; i+=1200){
-                        red[n]   = GetRed(rgbFrame[i]);
-                        green[n] = GetGreen(rgbFrame[i]);
-                        blue[n]  = GetBlue(rgbFrame[i]);
-                        n++;
-                }
-
-                int r = 0,g = 0,b = 0;
-                int p;
-                for (p = 0; p<10; p++){
-                        r += red[p];
-                        g += green[p];
-                        b += blue[p];
-                }
-                r = r/10;
-                g = g/10;
-                b = b/10;
                 //Send "Hello World" to the UART0
-
-
                 SendBufferToUART0((unsigned char*) "Hello World", 11);
                 //convert it from int to char*
-                char redchar[10], greenchar[10], bluechar[10];
-                
-                int redsum = getSumOfReds(rgbFrame);
-                                int greensum = getSumOfGreens(rgbFrame);
-                                                int bluesum = getSumOfBlues(rgbFrame);
+                char ravg[10], gavg[10], bavg[10];
                 char rsum[20], gsum[20], bsum[20];
+
+
+                /* Deal with average*/
+                int redavg = getAvgOfReds(rgbFrame);
+                int blueavg = getAvgOfBlues(rgbFrame);
+                int greenavg = getAvgOfGreens(rgbFrame);
+
+                PrintToABuffer(&ravg, "%d", redavg); 
+                PrintToABuffer(&gavg, "%d", greenavg);
+                PrintToABuffer(&bsum, "%d", blueavg);
+
+                /*Deal with sum*/
+                int redsum = getSumOfReds(rgbFrame);
+                int greensum = getSumOfGreens(rgbFrame);
+                int bluesum = getSumOfBlues(rgbFrame);
                                                 
                 PrintToABuffer(&rsum, "%d", redsum);
                 PrintToABuffer(&gsum, "%d", greensum);
                 PrintToABuffer(&bsum, "%d", bluesum);
-                PrintToABuffer(&redchar, "%d", r); 
-                PrintToABuffer(&greenchar, "%d", g);
-                PrintToABuffer(&bluechar, "%d", b);
+
+
                 SendBufferToUART0((unsigned char*) "\nRedsum\n", 6);
                 SendBufferToUART0(rsum, 20);
                 SendBufferToUART0((unsigned char*) "\ngreensum\n", 8);
@@ -178,9 +211,9 @@ int     main(void)
                 SendBufferToUART0((unsigned char*) "\nbluesum\n", 7);
                 SendBufferToUART0(bsum, 20);              
                 //display it
-                PrintTextOnPobLCD(1, 1, redchar, LCD_Buffer);
-                PrintTextOnPobLCD(2, 1, greenchar, LCD_Buffer);
-                PrintTextOnPobLCD(4, 1, bluechar, LCD_Buffer);
+                PrintTextOnPobLCD(1, 1, ravg, LCD_Buffer);
+                PrintTextOnPobLCD(2, 1, gavg, LCD_Buffer);
+                PrintTextOnPobLCD(4, 1, bavg, LCD_Buffer);
                 PrintTextOnPobLCD(1, 6, rsum, LCD_Buffer);
                 PrintTextOnPobLCD(2, 6, gsum, LCD_Buffer);
                 PrintTextOnPobLCD(4, 6, bsum, LCD_Buffer);
