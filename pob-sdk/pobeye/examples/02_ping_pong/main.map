@@ -1,0 +1,200 @@
+Archive member included because of file (symbol)
+
+T:/project/PobTools_Qt/final_application\SDK\pobeye\libpob.a(init.o)
+                              ./ping_pong.o (InitPOBEYE)
+T:/project/PobTools_Qt/final_application\SDK\pobeye\libpob.a(uart.o)
+                              ./ping_pong.o (InitUART)
+T:/project/PobTools_Qt/final_application\SDK\pobeye\libpob.a(cam.o)
+                              T:/project/PobTools_Qt/final_application\SDK\pobeye\libpob.a(init.o) (InitCam)
+T:/project/PobTools_Qt/final_application\SDK\pobeye\libpob.a(i2c.o)
+                              T:/project/PobTools_Qt/final_application\SDK\pobeye\libpob.a(init.o) (InitI2C)
+/cygdrive/c/Program Files/GNUARM/bin/../lib/gcc/arm-elf/3.4.3/thumb/libgcc.a(_udivsi3.o)
+                              T:/project/PobTools_Qt/final_application\SDK\pobeye\libpob.a(uart.o) (__udivsi3)
+/cygdrive/c/Program Files/GNUARM/bin/../lib/gcc/arm-elf/3.4.3/thumb/libgcc.a(_umodsi3.o)
+                              T:/project/PobTools_Qt/final_application\SDK\pobeye\libpob.a(uart.o) (__umodsi3)
+/cygdrive/c/Program Files/GNUARM/bin/../lib/gcc/arm-elf/3.4.3/thumb/libgcc.a(_dvmd_tls.o)
+                              /cygdrive/c/Program Files/GNUARM/bin/../lib/gcc/arm-elf/3.4.3/thumb/libgcc.a(_udivsi3.o) (__div0)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x00000000         0x0001e000
+ram              0x40000000         0x00010000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./ping_pong.o
+LOAD T:/project/PobTools_Qt/final_application\SDK\pobeye\boot.o
+LOAD T:/project/PobTools_Qt/final_application\SDK\pobeye\libpob.a
+LOAD /cygdrive/c/Program Files/GNUARM/bin/../lib/gcc/arm-elf/3.4.3/../../../../arm-elf/lib/thumb/libm.a
+LOAD /cygdrive/c/Program Files/GNUARM/bin/../lib/gcc/arm-elf/3.4.3/thumb/libgcc.a
+LOAD /cygdrive/c/Program Files/GNUARM/bin/../lib/gcc/arm-elf/3.4.3/../../../../arm-elf/lib/thumb/libc.a
+LOAD /cygdrive/c/Program Files/GNUARM/bin/../lib/gcc/arm-elf/3.4.3/thumb/libgcc.a
+                0x4000fffc                __stack_end__ = 0x4000fffc
+                0x00000000                . = 0x0
+
+startup         0x00000000       0x20
+ *(.startup)
+ .startup       0x00000000       0x20 T:/project/PobTools_Qt/final_application\SDK\pobeye\boot.o
+
+prog            0x00000020     0x18b0
+ *(.text)
+ .text          0x00000020       0x20 ./ping_pong.o
+                0x00000020                main
+ .text          0x00000040       0x84 T:/project/PobTools_Qt/final_application\SDK\pobeye\boot.o
+                0x00000040                _start
+                0x00000040                start
+                0x000000a8                endless_loop
+ .text          0x000000c4      0x23c T:/project/PobTools_Qt/final_application\SDK\pobeye\libpob.a(init.o)
+                0x000000c4                _InitPOBEYE_
+                0x000002a0                Wait
+                0x000002e4                TimerStop
+                0x000002c8                TimerStart
+                0x00000200                InitPOBEYE
+                0x00000160                InitPOBEYE2
+                0x000002f4                TimerGet
+ .text          0x00000300      0x958 T:/project/PobTools_Qt/final_application\SDK\pobeye\libpob.a(uart.o)
+                0x00000b7c                printf
+                0x00000450                SendBufferToUART
+                0x0000047c                GetByteFromUART
+                0x00000b90                PrintTextOnPobTerminal
+                0x00000bd0                PrintComponentOnPobTerminal
+                0x0000049c                GetByteFromUARTNoWait
+                0x00000430                SendByteToUART
+                0x00000300                InitUART
+                0x000004bc                GetBufferFromUART
+ .text          0x00000c58      0x918 T:/project/PobTools_Qt/final_application\SDK\pobeye\libpob.a(cam.o)
+                0x00001100                GrabGreenFrame
+                0x00000ff8                GrabBlueFrame
+                0x000013d8                GrabRGBFrame
+                0x00000c8c                GetPointerOnHSLFrame
+                0x00000c70                GetPointerOnRGBFrame
+                0x00001218                GrabRGBFrameXY
+                0x00000c68                GetPointerOnGreenBuffer
+                0x00000ce4                InitCam
+                0x00000ed0                GrabRedFrame
+                0x00000c60                GetPointerOnBlueBuffer
+                0x00000c58                GetPointerOnRedBuffer
+                0x00000ca8                SendToCam
+ .text          0x00001570      0x204 T:/project/PobTools_Qt/final_application\SDK\pobeye\libpob.a(i2c.o)
+                0x00001718                WriteOnI2C
+                0x00001570                InitI2C
+                0x00001750                STOPI2C
+                0x0000168c                ReadOnI2C
+                0x000015a8                SetI2cSpeed
+                0x000015f4                SendSlaveAdress
+                0x000016c8                ReadOnI2CWithAck
+ .text          0x00001774       0x7c /cygdrive/c/Program Files/GNUARM/bin/../lib/gcc/arm-elf/3.4.3/thumb/libgcc.a(_udivsi3.o)
+                0x00001774                __udivsi3
+ .text          0x000017f0       0xc8 /cygdrive/c/Program Files/GNUARM/bin/../lib/gcc/arm-elf/3.4.3/thumb/libgcc.a(_umodsi3.o)
+                0x000017f0                __umodsi3
+ .text          0x000018b8        0x4 /cygdrive/c/Program Files/GNUARM/bin/../lib/gcc/arm-elf/3.4.3/thumb/libgcc.a(_dvmd_tls.o)
+                0x000018b8                __div0
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.4
+                0x000018bc        0x7 T:/project/PobTools_Qt/final_application\SDK\pobeye\libpob.a(uart.o)
+                                  0x8 (size before relaxing)
+ *(.glue_7)
+ *fill*         0x000018c3        0x1 00
+ .glue_7        0x000018c4        0xc /cygdrive/c/Program Files/GNUARM/bin/../lib/gcc/arm-elf/3.4.3/thumb/libgcc.a(_dvmd_tls.o)
+                0x000018c4                __main_from_arm
+ *(.glue_7t)
+                0x000018d0                __end_of_text__ = .
+
+.data           0x40000000        0x0 load address 0x000018d0
+                0x40000000                __data_beg__ = .
+                0x000018d0                __data_beg_src__ = __end_of_text__
+ *(.data)
+                0x40000000                __data_end__ = .
+
+.bss            0x40000000     0x7bd4
+                0x40000000                __bss_beg__ = .
+ *(.bss)
+ .bss           0x40000000     0x7bd4 T:/project/PobTools_Qt/final_application\SDK\pobeye\libpob.a(cam.o)
+                0x40007bd4                . = ALIGN (0x4)
+                0x40007bd4                . = ALIGN (0x4)
+                0x40007bd4                _end = .
+                0x40007bd4                _bss_end__ = .
+                0x40007bd4                __bss_end__ = .
+                0x40007bd4                __end__ = .
+                0x40007bd4                PROVIDE (end, .)
+                0x000000a8                PROVIDE (undefined_instruction_exception, endless_loop)
+                0x000000a8                PROVIDE (software_interrupt_exception, endless_loop)
+                0x000000a8                PROVIDE (prefetch_abort_exception, endless_loop)
+                0x000000a8                PROVIDE (data_abort_exception, endless_loop)
+                0x000000a8                PROVIDE (reserved_exception, endless_loop)
+                0x000000a8                PROVIDE (interrupt_exception, endless_loop)
+                0x000000a8                PROVIDE (fast_interrupt_exception, endless_loop)
+                0xe002c000                PROVIDE (PINSEL0, 0xe002c000)
+                0xe0028008                PROVIDE (IODIR, 0xe0028008)
+                0xe002800c                PROVIDE (IOCLR, 0xe002800c)
+                0xe0028004                PROVIDE (IOSET, 0xe0028004)
+                0xe000c000                PROVIDE (U0RBR, 0xe000c000)
+                0xe000c000                PROVIDE (U0THR, 0xe000c000)
+                0xe000c004                PROVIDE (U0IER, 0xe000c004)
+                0xe000c008                PROVIDE (U0IIR, 0xe000c008)
+                0xe000c008                PROVIDE (U0FCR, 0xe000c008)
+                0xe000c00c                PROVIDE (U0LCR, 0xe000c00c)
+                0xe000c014                PROVIDE (U0LSR, 0xe000c014)
+                0xe000c01c                PROVIDE (U0SCR, 0xe000c01c)
+                0xe000c000                PROVIDE (U0DLL, 0xe000c000)
+                0xe000c004                PROVIDE (U0DLM, 0xe000c004)
+                0xe0010000                PROVIDE (U1RBR, 0xe0010000)
+                0xe0010000                PROVIDE (U1THR, 0xe0010000)
+                0xe0010004                PROVIDE (U1IER, 0xe0010004)
+                0xe0010008                PROVIDE (U1IIR, 0xe0010008)
+                0xe0010008                PROVIDE (U1FCR, 0xe0010008)
+                0xe001000c                PROVIDE (U1LCR, 0xe001000c)
+                0xe0010014                PROVIDE (U1LSR, 0xe0010014)
+                0xe001001c                PROVIDE (U1SCR, 0xe001001c)
+                0xe0010000                PROVIDE (U1DLL, 0xe0010000)
+                0xe0010004                PROVIDE (U1DLM, 0xe0010004)
+                0xe01fc080                PROVIDE (PLLCON, 0xe01fc080)
+                0xe01fc084                PROVIDE (PLLCFG, 0xe01fc084)
+                0xe01fc088                PROVIDE (PLLSTAT, 0xe01fc088)
+                0xe01fc08c                PROVIDE (PLLFEED, 0xe01fc08c)
+                0xe01fc000                PROVIDE (MAMCR, 0xe01fc000)
+                0xe01fc004                PROVIDE (MAMTIM, 0xe01fc004)
+                0xe01fc100                PROVIDE (VPBDIV, 0xe01fc100)
+                0xe0004000                PROVIDE (T0IR, 0xe0004000)
+                0xe0004004                PROVIDE (T0TCR, 0xe0004004)
+                0xe0004008                PROVIDE (T0TC, 0xe0004008)
+                0xe000400c                PROVIDE (T0PR, 0xe000400c)
+                0xe0004010                PROVIDE (T0PC, 0xe0004010)
+                0xe0004014                PROVIDE (T0MCR, 0xe0004014)
+                0xe0004018                PROVIDE (T0MR0, 0xe0004018)
+                0xe000401c                PROVIDE (T0MR1, 0xe000401c)
+                0xe0004020                PROVIDE (T0MR2, 0xe0004020)
+                0xe0004024                PROVIDE (T0MR3, 0xe0004024)
+                0xe0004028                PROVIDE (T0CCR, 0xe0004028)
+                0xe000402c                PROVIDE (T0CR0, 0xe000402c)
+                0xe0004030                PROVIDE (T0CR1, 0xe0004030)
+                0xe0004034                PROVIDE (T0CR2, 0xe0004034)
+                0xe000403c                PROVIDE (T0EMR, 0xe000403c)
+                0x3fffc014                PROVIDE (GPIO_IOPIN, 0x3fffc014)
+                0x3fffc018                PROVIDE (GPIO_IOSET, 0x3fffc018)
+                0x3fffc000                PROVIDE (GPIO_IODIR, 0x3fffc000)
+                0x3fffc01c                PROVIDE (GPIO_IOCLR, 0x3fffc01c)
+                0x3fffc014                PROVIDE (POB_IO, 0x3fffc014)
+                0x3fffc000                PROVIDE (POB_IODIR, 0x3fffc000)
+                0x3fffc018                PROVIDE (POB_IOSET, 0x3fffc018)
+                0x3fffc01c                PROVIDE (POB_IOCLR, 0x3fffc01c)
+                0xe01fc1a0                PROVIDE (SCS, 0xe01fc1a0)
+OUTPUT(./Ping_Pong.elf elf32-littlearm)
+
+.comment        0x00000000       0x5a
+ .comment       0x00000000       0x12 ./ping_pong.o
+ .comment       0x00000012       0x12 T:/project/PobTools_Qt/final_application\SDK\pobeye\libpob.a(init.o)
+ .comment       0x00000024       0x12 T:/project/PobTools_Qt/final_application\SDK\pobeye\libpob.a(uart.o)
+ .comment       0x00000036       0x12 T:/project/PobTools_Qt/final_application\SDK\pobeye\libpob.a(cam.o)
+ .comment       0x00000048       0x12 T:/project/PobTools_Qt/final_application\SDK\pobeye\libpob.a(i2c.o)
+
+.debug_line
+
+.debug_info
+
+.debug_abbrev
+
+.debug_aranges

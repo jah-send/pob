@@ -1,0 +1,356 @@
+Archive member included because of file (symbol)
+
+/Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(graph.o)
+                              ./Hello_world.o (InitGraphicBuffer)
+/Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(init.o)
+                              ./Hello_world.o (InitPOBEYE)
+/Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(lcd.o)
+                              ./Hello_world.o (InitLCD)
+/Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(uart.o)
+                              /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(init.o) (InitUART)
+/Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(cam.o)
+                              /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(init.o) (InitCam)
+/Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(i2c.o)
+                              /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(init.o) (InitI2C)
+/Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(io-bus.o)
+                              /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(lcd.o) (SetIOWay)
+/Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_udivsi3.o)
+                              /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(uart.o) (__udivsi3)
+/Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_divsi3.o)
+                              /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(graph.o) (__divsi3)
+/Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_umodsi3.o)
+                              /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(uart.o) (__umodsi3)
+/Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_dvmd_tls.o)
+                              /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_udivsi3.o) (__div0)
+
+Discarded input sections
+
+ .debug_frame   0x00000000       0x2c /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_udivsi3.o)
+ .debug_line    0x00000000       0x94 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_udivsi3.o)
+ .debug_info    0x00000000       0xb3 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_udivsi3.o)
+ .debug_abbrev  0x00000000       0x14 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_udivsi3.o)
+ .debug_aranges
+                0x00000000       0x20 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_udivsi3.o)
+ .debug_frame   0x00000000       0x2c /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_divsi3.o)
+ .debug_line    0x00000000       0xa0 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_divsi3.o)
+ .debug_info    0x00000000       0xb3 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_divsi3.o)
+ .debug_abbrev  0x00000000       0x14 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_divsi3.o)
+ .debug_aranges
+                0x00000000       0x20 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_divsi3.o)
+ .debug_frame   0x00000000       0x2c /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_umodsi3.o)
+ .debug_line    0x00000000       0x7e /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_umodsi3.o)
+ .debug_info    0x00000000       0xb3 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_umodsi3.o)
+ .debug_abbrev  0x00000000       0x14 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_umodsi3.o)
+ .debug_aranges
+                0x00000000       0x20 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_umodsi3.o)
+ .debug_line    0x00000000       0x6d /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x00000000       0xb3 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x00000000       0x14 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_dvmd_tls.o)
+ .debug_aranges
+                0x00000000       0x20 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_dvmd_tls.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x00000000         0x0001e000
+ram              0x40000000         0x00010000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./Hello_world.o
+LOAD /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/../../../../arm-elf/lib/interwork/libc.a
+LOAD /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/../../../../arm-elf/lib/interwork/libm.a
+LOAD /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a
+LOAD /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/boot.o
+LOAD /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a
+START GROUP
+LOAD /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a
+LOAD /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/../../../../arm-elf/lib/interwork/libc.a
+END GROUP
+                0x4000fffc                __stack_end__ = 0x4000fffc
+                0x00000000                . = 0x0
+
+startup         0x00000000       0x20
+ *(.startup)
+ .startup       0x00000000       0x20 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/boot.o
+
+prog            0x00000020     0x3b38
+ *(.text)
+ .text          0x00000020       0x7c ./Hello_world.o
+                0x00000020                main
+ .text          0x0000009c       0x84 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/boot.o
+                0x0000009c                _start
+                0x0000009c                start
+                0x00000104                endless_loop
+ .text          0x00000120      0x818 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(graph.o)
+                0x00000120                InitGraphicBuffer
+                0x0000012c                ClearGraphicBuffer
+                0x00000170                PlotAPoint
+                0x000001c8                DrawComponentInABufferVideo
+                0x00000250                DrawLine
+                0x000004d4                GetBitmapWidth
+                0x0000053c                GetBitmapHeight
+                0x000005a4                DrawBitmap
+ .text          0x00000938      0x23c /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(init.o)
+                0x00000938                _InitPOBEYE_
+                0x000009d4                InitPOBEYE2
+                0x00000a74                InitPOBEYE
+                0x00000b14                Wait
+                0x00000b3c                TimerStart
+                0x00000b58                TimerStop
+                0x00000b68                TimerGet
+ .text          0x00000b74      0xe78 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(lcd.o)
+                0x00000b74                SetLCDIO
+                0x00000b8c                TicTac
+                0x00000bac                SetData
+                0x00000bd4                SetPageXYZ
+                0x00000c54                InitLCD
+                0x00000dc0                DrawLeftLCD
+                0x00001084                DrawRightLCD
+                0x00001350                DrawLCD
+ .text          0x000019ec      0x958 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(uart.o)
+                0x000019ec                InitUART
+                0x00001b1c                SendByteToUART
+                0x00001b3c                SendBufferToUART
+                0x00001b68                GetByteFromUART
+                0x00001b88                GetByteFromUARTNoWait
+                0x00001ba8                GetBufferFromUART
+                0x00002268                printf
+                0x0000227c                PrintTextOnPobTerminal
+                0x000022bc                PrintComponentOnPobTerminal
+ .text          0x00002344      0x918 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(cam.o)
+                0x00002344                GetPointerOnRedBuffer
+                0x0000234c                GetPointerOnBlueBuffer
+                0x00002354                GetPointerOnGreenBuffer
+                0x0000235c                GetPointerOnRGBFrame
+                0x00002378                GetPointerOnHSLFrame
+                0x00002394                SendToCam
+                0x000023d0                InitCam
+                0x000025bc                GrabRedFrame
+                0x000026e4                GrabBlueFrame
+                0x000027ec                GrabGreenFrame
+                0x00002904                GrabRGBFrameXY
+                0x00002ac4                GrabRGBFrame
+ .text          0x00002c5c      0x204 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(i2c.o)
+                0x00002c5c                InitI2C
+                0x00002c94                SetI2cSpeed
+                0x00002ce0                SendSlaveAdress
+                0x00002d78                ReadOnI2C
+                0x00002db4                ReadOnI2CWithAck
+                0x00002e04                WriteOnI2C
+                0x00002e3c                STOPI2C
+ .text          0x00002e60      0x15c /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(io-bus.o)
+                0x00002e60                SetIOWay
+                0x00002e6c                GetInput
+                0x00002e78                SetOutput
+                0x00002e84                ClrOutput
+                0x00002e90                ClrAndSetOuput
+                0x00002ea4                WriteByte
+                0x00002f30                ReadByte
+ .text          0x00002fbc      0x114 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_udivsi3.o)
+                0x00002fbc                __udivsi3
+                0x00002fbc                __aeabi_uidiv
+                0x000030b8                __aeabi_uidivmod
+ .text          0x000030d0      0x144 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_divsi3.o)
+                0x000030d0                __aeabi_idiv
+                0x000030d0                __divsi3
+                0x000031fc                __aeabi_idivmod
+ .text          0x00003214       0xd0 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_umodsi3.o)
+                0x00003214                __umodsi3
+ .text          0x000032e4        0x4 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_dvmd_tls.o)
+                0x000032e4                __aeabi_ldiv0
+                0x000032e4                __div0
+                0x000032e4                __aeabi_idiv0
+ *(.rodata)
+ .rodata        0x000032e8      0x808 ./Hello_world.o
+                0x000032e8                bitmap
+ *(.rodata*)
+ .rodata.str1.4
+                0x00003af0        0x8 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(uart.o)
+ *(.glue_7)
+ .glue_7        0x00003af8       0x48 linker stubs
+                0x00003af8                __InitPOBEYE_from_arm
+                0x00003b04                __InitLCD_from_arm
+                0x00003b10                __InitGraphicBuffer_from_arm
+                0x00003b1c                __ClearGraphicBuffer_from_arm
+                0x00003b28                __DrawBitmap_from_arm
+                0x00003b34                __DrawLCD_from_arm
+ .glue_7.stub   0x00003b40       0x18 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+                0x00003b58                __end_of_text__ = .
+
+.vfp11_veneer   0x00003b58        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00003b58        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.data           0x40000000        0x0 load address 0x00003b58
+                0x40000000                __data_beg__ = .
+                0x00003b58                __data_beg_src__ = __end_of_text__
+ *(.data)
+ .data          0x40000000        0x0 ./Hello_world.o
+ .data          0x40000000        0x0 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/boot.o
+ .data          0x40000000        0x0 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(graph.o)
+ .data          0x40000000        0x0 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(init.o)
+ .data          0x40000000        0x0 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(lcd.o)
+ .data          0x40000000        0x0 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(uart.o)
+ .data          0x40000000        0x0 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(cam.o)
+ .data          0x40000000        0x0 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(i2c.o)
+ .data          0x40000000        0x0 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(io-bus.o)
+ .data          0x40000000        0x0 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_udivsi3.o)
+ .data          0x40000000        0x0 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_divsi3.o)
+ .data          0x40000000        0x0 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_umodsi3.o)
+ .data          0x40000000        0x0 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_dvmd_tls.o)
+                0x40000000                __data_end__ = .
+
+.bss            0x40000000     0x7bd4 load address 0x00003b58
+                0x40000000                __bss_beg__ = .
+ *(.bss)
+ .bss           0x40000000        0x0 ./Hello_world.o
+ .bss           0x40000000        0x0 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/boot.o
+ .bss           0x40000000        0x0 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(graph.o)
+ .bss           0x40000000        0x0 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(init.o)
+ .bss           0x40000000        0x0 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(lcd.o)
+ .bss           0x40000000        0x0 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(uart.o)
+ .bss           0x40000000     0x7bd4 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(cam.o)
+ .bss           0x40007bd4        0x0 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(i2c.o)
+ .bss           0x40007bd4        0x0 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(io-bus.o)
+ .bss           0x40007bd4        0x0 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_udivsi3.o)
+ .bss           0x40007bd4        0x0 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_divsi3.o)
+ .bss           0x40007bd4        0x0 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_umodsi3.o)
+ .bss           0x40007bd4        0x0 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_dvmd_tls.o)
+                0x40007bd4                . = ALIGN (0x4)
+                0x40007bd4                . = ALIGN (0x4)
+                0x40007bd4                _end = .
+                0x40007bd4                _bss_end__ = .
+                0x40007bd4                __bss_end__ = .
+                0x40007bd4                __end__ = .
+                0x40007bd4                PROVIDE (end, .)
+                0x00000104                PROVIDE (undefined_instruction_exception, endless_loop)
+                0x00000104                PROVIDE (software_interrupt_exception, endless_loop)
+                0x00000104                PROVIDE (prefetch_abort_exception, endless_loop)
+                0x00000104                PROVIDE (data_abort_exception, endless_loop)
+                0x00000104                PROVIDE (reserved_exception, endless_loop)
+                0x00000104                PROVIDE (interrupt_exception, endless_loop)
+                0x00000104                PROVIDE (fast_interrupt_exception, endless_loop)
+                0xe002c000                PROVIDE (PINSEL0, 0xe002c000)
+                0xe0028008                PROVIDE (IODIR, 0xe0028008)
+                0xe002800c                PROVIDE (IOCLR, 0xe002800c)
+                0xe0028004                PROVIDE (IOSET, 0xe0028004)
+                0xe000c000                PROVIDE (U0RBR, 0xe000c000)
+                0xe000c000                PROVIDE (U0THR, 0xe000c000)
+                0xe000c004                PROVIDE (U0IER, 0xe000c004)
+                0xe000c008                PROVIDE (U0IIR, 0xe000c008)
+                0xe000c008                PROVIDE (U0FCR, 0xe000c008)
+                0xe000c00c                PROVIDE (U0LCR, 0xe000c00c)
+                0xe000c014                PROVIDE (U0LSR, 0xe000c014)
+                0xe000c01c                PROVIDE (U0SCR, 0xe000c01c)
+                0xe000c000                PROVIDE (U0DLL, 0xe000c000)
+                0xe000c004                PROVIDE (U0DLM, 0xe000c004)
+                0xe0010000                PROVIDE (U1RBR, 0xe0010000)
+                0xe0010000                PROVIDE (U1THR, 0xe0010000)
+                0xe0010004                PROVIDE (U1IER, 0xe0010004)
+                0xe0010008                PROVIDE (U1IIR, 0xe0010008)
+                0xe0010008                PROVIDE (U1FCR, 0xe0010008)
+                0xe001000c                PROVIDE (U1LCR, 0xe001000c)
+                0xe0010014                PROVIDE (U1LSR, 0xe0010014)
+                0xe001001c                PROVIDE (U1SCR, 0xe001001c)
+                0xe0010000                PROVIDE (U1DLL, 0xe0010000)
+                0xe0010004                PROVIDE (U1DLM, 0xe0010004)
+                0xe01fc080                PROVIDE (PLLCON, 0xe01fc080)
+                0xe01fc084                PROVIDE (PLLCFG, 0xe01fc084)
+                0xe01fc088                PROVIDE (PLLSTAT, 0xe01fc088)
+                0xe01fc08c                PROVIDE (PLLFEED, 0xe01fc08c)
+                0xe01fc000                PROVIDE (MAMCR, 0xe01fc000)
+                0xe01fc004                PROVIDE (MAMTIM, 0xe01fc004)
+                0xe01fc100                PROVIDE (VPBDIV, 0xe01fc100)
+                0xe0004000                PROVIDE (T0IR, 0xe0004000)
+                0xe0004004                PROVIDE (T0TCR, 0xe0004004)
+                0xe0004008                PROVIDE (T0TC, 0xe0004008)
+                0xe000400c                PROVIDE (T0PR, 0xe000400c)
+                0xe0004010                PROVIDE (T0PC, 0xe0004010)
+                0xe0004014                PROVIDE (T0MCR, 0xe0004014)
+                0xe0004018                PROVIDE (T0MR0, 0xe0004018)
+                0xe000401c                PROVIDE (T0MR1, 0xe000401c)
+                0xe0004020                PROVIDE (T0MR2, 0xe0004020)
+                0xe0004024                PROVIDE (T0MR3, 0xe0004024)
+                0xe0004028                PROVIDE (T0CCR, 0xe0004028)
+                0xe000402c                PROVIDE (T0CR0, 0xe000402c)
+                0xe0004030                PROVIDE (T0CR1, 0xe0004030)
+                0xe0004034                PROVIDE (T0CR2, 0xe0004034)
+                0xe000403c                PROVIDE (T0EMR, 0xe000403c)
+                0x3fffc014                PROVIDE (GPIO_IOPIN, 0x3fffc014)
+                0x3fffc018                PROVIDE (GPIO_IOSET, 0x3fffc018)
+                0x3fffc000                PROVIDE (GPIO_IODIR, 0x3fffc000)
+                0x3fffc01c                PROVIDE (GPIO_IOCLR, 0x3fffc01c)
+                0x3fffc014                PROVIDE (POB_IO, 0x3fffc014)
+                0x3fffc000                PROVIDE (POB_IODIR, 0x3fffc000)
+                0x3fffc018                PROVIDE (POB_IOSET, 0x3fffc018)
+                0x3fffc01c                PROVIDE (POB_IOCLR, 0x3fffc01c)
+                0xe01fc1a0                PROVIDE (SCS, 0xe01fc1a0)
+OUTPUT(./Hello_World.elf elf32-littlearm)
+
+.comment        0x00000000       0x8f
+ .comment       0x00000000       0x11 ./Hello_world.o
+                                 0x12 (size before relaxing)
+ .comment       0x00000011       0x12 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(graph.o)
+ .comment       0x00000023       0x12 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(init.o)
+ .comment       0x00000035       0x12 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(lcd.o)
+ .comment       0x00000047       0x12 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(uart.o)
+ .comment       0x00000059       0x12 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(cam.o)
+ .comment       0x0000006b       0x12 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(i2c.o)
+ .comment       0x0000007d       0x12 /Users/0moi/Documents/SVN - POB-Tools/pobtools/MacOsX/pobtoolsmacos.app/Contents/MacOS/../Resources/sdk/pobeye/libpob.a(io-bus.o)
+
+.ARM.attributes
+                0x00000000       0x10
+ .ARM.attributes
+                0x00000000       0x10 ./Hello_world.o
+ .ARM.attributes
+                0x00000010       0x10 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000020       0x10 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x00000030       0x10 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_umodsi3.o)
+ .ARM.attributes
+                0x00000040       0x10 /Developer/yagarto-4.4.2/bin/../lib/gcc/arm-elf/4.4.2/interwork/libgcc.a(_dvmd_tls.o)
+
+.debug_frame
+
+.debug_line
+
+.debug_info
+
+.debug_abbrev
+
+.debug_aranges
+
+.debug_frame
+
+.debug_line
+
+.debug_info
+
+.debug_abbrev
+
+.debug_aranges
+
+.debug_frame
+
+.debug_line
+
+.debug_info
+
+.debug_abbrev
+
+.debug_aranges
+
+.debug_line
+
+.debug_info
+
+.debug_abbrev
+
+.debug_aranges

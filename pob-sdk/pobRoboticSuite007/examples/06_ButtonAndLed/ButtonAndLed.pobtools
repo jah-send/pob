@@ -1,0 +1,9 @@
+# pobtools project
+pobtools.version=4
+target.name=./ButtonAndLed.hex
+sources.number=1
+sources.0=./ButtonAndLed.c
+bmps.number=0
+patterns.number=0
+sdk=rs007
+lang=C

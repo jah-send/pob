@@ -1,0 +1,12 @@
+; begin
+; end
+[POB-TOOLS Project]
+cfile1 = main_test_i2c.c
+bitmapNb = 0
+bitmap = 
+cfile0 = ..\dualpob_i2c_lib.c
+cfileNb = 2
+pattern = 
+patternNb = 0
+upload = test_i2c_dualpob.hex
+hex = test_i2c_dualpob.hex

@@ -1,0 +1,533 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Librairie POB-Robotics-Suite: Référence du fichier Devices_MiniVEX.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.7.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Portée&nbsp;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<h1>Référence du fichier Devices_MiniVEX.h</h1>  </div>
+</div>
+<div class="contents">
+
+<p>Actionneur et Capteur MiniVEX.  
+<a href="#_details">Plus de détails...</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Broche d'entrées/sorties du MiniVex.</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrpf6f06ad65a711ddceebc3b446e13fa69"></a>Gestion des entrées/sorties du MiniVex : Entrée analogique et Entrée/Sortie numérique. </p>
+</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UInt16&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_devices___mini_v_e_x_8h.html#add8a258e569994a665fb048eb7eb455c">GetAnalogFromMiniVEX</a> (UInt8 port)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Récupérer la valeur analogique de l'entrée analogique du MiniVEX.  <a href="#add8a258e569994a665fb048eb7eb455c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_devices___mini_v_e_x_8h.html#ab77656c2d79b4ed49d6abd40ca3aa198">InitDigitalIOFromMiniVEX</a> (UInt8 port, UInt8 pin, <a class="el" href="_mcu_i_o_8h.html#a8fe711c8476ef963165836b64cb6df0c">DIGITAL_WAY</a> way)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialiser le sens (entrée ou sortie) d'une broche numérique.  <a href="#ab77656c2d79b4ed49d6abd40ca3aa198"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UInt8&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_devices___mini_v_e_x_8h.html#a1e4d71c7ffd78aabf84a4fc00750d439">GetDigitalIOFromMiniVEX</a> (UInt8 port, UInt8 pin)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Récupérer l'état d'une broche d'entrée numérique.  <a href="#a1e4d71c7ffd78aabf84a4fc00750d439"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_devices___mini_v_e_x_8h.html#afef1ec933abac8265ea3d51a2b4d2c9f">SetDigitalIOFromMiniVEX</a> (UInt8 port, UInt8 pin)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Met à 1 une broche de sortie.  <a href="#afef1ec933abac8265ea3d51a2b4d2c9f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_devices___mini_v_e_x_8h.html#a5db85e7901edac2adc3151a9246e7340">ClearDigitalIOFromMiniVEX</a> (UInt8 port, UInt8 pin)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Met à 0 une broche de sortie.  <a href="#a5db85e7901edac2adc3151a9246e7340"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Servomoteurs VEX.</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrp671f9118e73b6decde42b3185bd2917d"></a>Gestion des moteurs et des servomoteurs VEX. </p>
+</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_devices___mini_v_e_x_8h.html#aaeae88b9c72dea0abe020e01dd329679">SetServoFromMiniVEX</a> (UInt8 port, UInt16 Position, UInt8 Speed)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Positionner le servomoteur MiniVEX.  <a href="#aaeae88b9c72dea0abe020e01dd329679"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_devices___mini_v_e_x_8h.html#ae482a8be235954f8fbd75b49bc1666a4">StopServoFromMiniVEX</a> (UInt8 port)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Arrêter le servomoteur sur la carte MiniVEX.  <a href="#ae482a8be235954f8fbd75b49bc1666a4"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Encodeur VEX.</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrp281dbdf09ec3b56569af709b3f054a75"></a>Utiliser l'encodeur VEX avec la carte MiniVEX. </p>
+</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_devices___mini_v_e_x_8h.html#a1ca27174c3fe63e127f97e04e41c2e83">InitEncoderFromMiniVEX</a> (UInt8 port)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialiser l'encodeur numérique sur la carte MiniVEX.  <a href="#a1ca27174c3fe63e127f97e04e41c2e83"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UInt16&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_devices___mini_v_e_x_8h.html#a897234cabb393a59da4661a01a9dbf03">GetEncoderSpeedFromMiniVEX</a> (UInt8 port)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Récupérer la valeur de tours par minute de l'encodeur sur la carte MiniVEX.  <a href="#a897234cabb393a59da4661a01a9dbf03"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Capteur ultrason VEX.</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrpd5326fe7826aa27127791c12abf13717"></a>Utiliser le capteur ultrason VEX avec la carte MiniVEX. </p>
+</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_devices___mini_v_e_x_8h.html#af55f09edf4473eb53dd413b668a2e187">InitUltrasonicFromMiniVEX</a> (UInt8 port)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialiser le capteur ultrason sur la carte MiniVEX.  <a href="#af55f09edf4473eb53dd413b668a2e187"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UInt16&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_devices___mini_v_e_x_8h.html#af3fd4a47279550a57624103fb6da89a1">GetUltrasonicDistanceFromMiniVEX</a> (UInt8 port)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Récupérer la distance de l'objet devant le capteur ultrason.  <a href="#af3fd4a47279550a57624103fb6da89a1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_devices___mini_v_e_x_8h.html#aed17413f9486c254030d56e9e7276823">SetMotorFromMiniVEX</a> (UInt8 port, UInt8 direction)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Démarrer le moteur MiniVEX.  <a href="#aed17413f9486c254030d56e9e7276823"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_devices___mini_v_e_x_8h.html#a3ecacd239b83bfd166c303cef93eeeb0">StopMotorFromMiniVEX</a> (UInt8 port)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Stopper le moteur MiniVEX.  <a href="#a3ecacd239b83bfd166c303cef93eeeb0"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Description détaillée</h2>
+<p>Actionneur et Capteur MiniVEX. </p>
+<p><a class="anchor" id="minivex"></a></p>
+<p>La carte MiniVEX est un matériel compatible avec les capteurs et actionneurs VEX : Cette carte dispose de :</p>
+<ul>
+<li>1 sortie servomoteur/moteur VEX.</li>
+<li>1 entrée analogique.</li>
+<li>2 broches d'entrée/sortie numériques.</li>
+</ul>
+<p>Les deux broches numériques peuvent être connecté à :</p>
+<ul>
+<li>1 encodeur VEX.</li>
+<li>1 capteur ultrason VEX.</li>
+<li>ou être utilisé librement avec vos actionneurs/capteurs numériques. </li>
+</ul>
+<hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="a5db85e7901edac2adc3151a9246e7340"></a><!-- doxytag: member="Devices_MiniVEX.h::ClearDigitalIOFromMiniVEX" ref="a5db85e7901edac2adc3151a9246e7340" args="(UInt8 port, UInt8 pin)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ClearDigitalIOFromMiniVEX </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>pin</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Met à 0 une broche de sortie. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel le MiniVEX est connecté (entre 1 et 8). </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pin</em>&nbsp;</td><td>Numéro de la broche (0 ou 1). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="add8a258e569994a665fb048eb7eb455c"></a><!-- doxytag: member="Devices_MiniVEX.h::GetAnalogFromMiniVEX" ref="add8a258e569994a665fb048eb7eb455c" args="(UInt8 port)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UInt16 GetAnalogFromMiniVEX </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Récupérer la valeur analogique de l'entrée analogique du MiniVEX. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel le MiniVEX est connecté (entre 1 et 8). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>La valeur analogique. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1e4d71c7ffd78aabf84a4fc00750d439"></a><!-- doxytag: member="Devices_MiniVEX.h::GetDigitalIOFromMiniVEX" ref="a1e4d71c7ffd78aabf84a4fc00750d439" args="(UInt8 port, UInt8 pin)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UInt8 GetDigitalIOFromMiniVEX </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>pin</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Récupérer l'état d'une broche d'entrée numérique. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel le MiniVEX est connecté (entre 1 et 8). </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pin</em>&nbsp;</td><td>Numéro de la broche (0 ou 1). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>0 ou 1. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a897234cabb393a59da4661a01a9dbf03"></a><!-- doxytag: member="Devices_MiniVEX.h::GetEncoderSpeedFromMiniVEX" ref="a897234cabb393a59da4661a01a9dbf03" args="(UInt8 port)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UInt16 GetEncoderSpeedFromMiniVEX </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Récupérer la valeur de tours par minute de l'encodeur sur la carte MiniVEX. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel le MiniVEX est connecté (entre 1 et 8). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Valeur RPM (en tours/minute). </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af3fd4a47279550a57624103fb6da89a1"></a><!-- doxytag: member="Devices_MiniVEX.h::GetUltrasonicDistanceFromMiniVEX" ref="af3fd4a47279550a57624103fb6da89a1" args="(UInt8 port)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UInt16 GetUltrasonicDistanceFromMiniVEX </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Récupérer la distance de l'objet devant le capteur ultrason. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel le MiniVEX est connecté (entre 1 et 8). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Distance (en mm). </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab77656c2d79b4ed49d6abd40ca3aa198"></a><!-- doxytag: member="Devices_MiniVEX.h::InitDigitalIOFromMiniVEX" ref="ab77656c2d79b4ed49d6abd40ca3aa198" args="(UInt8 port, UInt8 pin, DIGITAL_WAY way)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InitDigitalIOFromMiniVEX </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>pin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_mcu_i_o_8h.html#a8fe711c8476ef963165836b64cb6df0c">DIGITAL_WAY</a>&nbsp;</td>
+          <td class="paramname"> <em>way</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Initialiser le sens (entrée ou sortie) d'une broche numérique. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel le MiniVEX est connecté (entre 1 et 8). </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pin</em>&nbsp;</td><td>Numéro de la broche (0 ou 1). </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>way</em>&nbsp;</td><td>Sens : DIG_IN pour une broche d'entrée ou DIG_OUT pour une broche de sortie. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1ca27174c3fe63e127f97e04e41c2e83"></a><!-- doxytag: member="Devices_MiniVEX.h::InitEncoderFromMiniVEX" ref="a1ca27174c3fe63e127f97e04e41c2e83" args="(UInt8 port)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InitEncoderFromMiniVEX </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Initialiser l'encodeur numérique sur la carte MiniVEX. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel le MiniVEX est connecté (entre 1 et 8). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af55f09edf4473eb53dd413b668a2e187"></a><!-- doxytag: member="Devices_MiniVEX.h::InitUltrasonicFromMiniVEX" ref="af55f09edf4473eb53dd413b668a2e187" args="(UInt8 port)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InitUltrasonicFromMiniVEX </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Initialiser le capteur ultrason sur la carte MiniVEX. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel le MiniVEX est connecté (entre 1 et 8). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afef1ec933abac8265ea3d51a2b4d2c9f"></a><!-- doxytag: member="Devices_MiniVEX.h::SetDigitalIOFromMiniVEX" ref="afef1ec933abac8265ea3d51a2b4d2c9f" args="(UInt8 port, UInt8 pin)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetDigitalIOFromMiniVEX </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>pin</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Met à 1 une broche de sortie. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel le MiniVEX est connecté (entre 1 et 8). </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pin</em>&nbsp;</td><td>Numéro de la broche (0 ou 1). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aed17413f9486c254030d56e9e7276823"></a><!-- doxytag: member="Devices_MiniVEX.h::SetMotorFromMiniVEX" ref="aed17413f9486c254030d56e9e7276823" args="(UInt8 port, UInt8 direction)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetMotorFromMiniVEX </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>direction</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Démarrer le moteur MiniVEX. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel le moteur MiniVEX est connecté (entre 1 et 8). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aaeae88b9c72dea0abe020e01dd329679"></a><!-- doxytag: member="Devices_MiniVEX.h::SetServoFromMiniVEX" ref="aaeae88b9c72dea0abe020e01dd329679" args="(UInt8 port, UInt16 Position, UInt8 Speed)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetServoFromMiniVEX </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt16&nbsp;</td>
+          <td class="paramname"> <em>Position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>Speed</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Positionner le servomoteur MiniVEX. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel le MiniVEX est connecté (entre 1 et 8). </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>Position</em>&nbsp;</td><td>Position du servomoteur. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>Speed</em>&nbsp;</td><td>Vitesse (de 1 à 31). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3ecacd239b83bfd166c303cef93eeeb0"></a><!-- doxytag: member="Devices_MiniVEX.h::StopMotorFromMiniVEX" ref="a3ecacd239b83bfd166c303cef93eeeb0" args="(UInt8 port)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StopMotorFromMiniVEX </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Stopper le moteur MiniVEX. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel le moteur MiniVEX est connecté (entre 1 et 8). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae482a8be235954f8fbd75b49bc1666a4"></a><!-- doxytag: member="Devices_MiniVEX.h::StopServoFromMiniVEX" ref="ae482a8be235954f8fbd75b49bc1666a4" args="(UInt8 port)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StopServoFromMiniVEX </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Arrêter le servomoteur sur la carte MiniVEX. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel le MiniVEX est connecté (entre 1 et 8). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div>
+<!-- 
+	Author : Baptiste Burles. POB-Technology
+	Date : 10/10/2005
+	
+	This is the html footer for the Doxygen doc.
+	
+-->
+<html>
+
+<p>
+
+<center>
+	<hr size="1"><address style="align: right;"><small>Generated by&nbsp;
+	<a href="http://www.doxygen.org/index.html">
+	<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> </small></address>
+	
+	
+	<address style="align: right;"><small>
+	This is a documentation from 
+	<a href="http://www.pob-technology.com">
+	<img src="LOGO_POB.JPG" align="middle" border="0"></a> All rights reserved.
+	</small></address>
+	
+</center>
+
+</html>

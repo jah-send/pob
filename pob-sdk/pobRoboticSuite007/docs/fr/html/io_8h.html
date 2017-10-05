@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Librairie POB-Robotics-Suite: Référence du fichier io.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.7.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Portée&nbsp;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<h1>Référence du fichier io.h</h1>  </div>
+</div>
+<div class="contents">
+
+<p>Gestion des entrées/sorties numériques.  
+<a href="#_details">Plus de détails...</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UInt32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#a756bb99fbd93ec8db209ea88efea3331">GetDigitalIO</a> (UInt8 port)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Récupérer l'état du port (0 ou 1).  <a href="#a756bb99fbd93ec8db209ea88efea3331"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#a300c49c27f1e0ad25d408906c2c2cf29">SetDigitalIO</a> (UInt8 port)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Met à 1 une sortie numérique.  <a href="#a300c49c27f1e0ad25d408906c2c2cf29"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#a3e0c722a094b4073fd40719f307da427">ClearDigitalIO</a> (UInt8 port)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Met à 0 une sortie numérique.  <a href="#a3e0c722a094b4073fd40719f307da427"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#add2c9aba750cb4a20fd6162c35a02356">SetLed</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Allume la led arriére du robot.  <a href="#add2c9aba750cb4a20fd6162c35a02356"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#ac3a79636520bf7882914092ce0a6536c">ClearLed</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Eteint la led arriére du robot.  <a href="#ac3a79636520bf7882914092ce0a6536c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UInt8&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="io_8h.html#af8acc12fad324753fb45dbcefab4edf9">GetButton</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Récupérer l'état du bouton arriére du robot.  <a href="#af8acc12fad324753fb45dbcefab4edf9"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Description détaillée</h2>
+<p>Gestion des entrées/sorties numériques. </p>
+<p><a class="anchor" id="io"></a></p>
+<p>POB-Robotics-Suite a 8 ports d'entrées/sorties numérique :</p>
+<ul>
+<li>Chaque port est automatiquement configuré en entrée ou en sortie suivant le type de capteur que vous branchez.</li>
+<li>Sur un port numérique, vous pouvez mettre à 0 ou à 1 une sortie numérique ou récupérer l'état d'une entrée numérique.</li>
+</ul>
+<p>Les broches sont 5V tolérantes.</p>
+<p>Si vous voulez lire une entrée analogique, il faut voir les <a class="el" href="analog_8h.html#analog">fonctions analogiques</a>.</p>
+<p>La fonction InitRobot initialise tout le bas niveau du robot : Vous n'avez pas à gérer toutes les initialisations bas niveau.</p>
+<dl class="user"><dt><b>Exemple Entrées/Sorties</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment"><span class="preprocessor">#include &lt;<a class="code" href="pob_robotic_suite_8h.html" title="Fichier En tête principale du POB-Robotics-Suite.">pobRoboticSuite.h</a>&gt;</span>
+
+<span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)
+{
+        <a class="code" href="pob_robotic_suite_8h.html#aa542033556769a56f3e0b9488048d31d">UInt32</a> result;
+
+        <span class="comment">// Initialisation du CPU:</span>
+        <a class="code" href="pob_robotic_suite_8h.html#a9c7b6f7049447d5d9103ab928bdb4dd2" title="Initialiser le microcontrôleur du POB-Robotics-Suite.">InitCpu</a>();
+
+        <span class="comment">// Initialisation du robot, recherche et initialisation des capteurs connectés sur les ports du POB-Robotics-Suite :</span>
+        <a class="code" href="_sensor_8h.html#a43a000f01e2871fa6ce80b03d7fbb0bf" title="Initialiser le matériel du POB-Robotics-Suite.">InitRobot</a>();
+
+        <span class="comment">// Il vous faut un &#39;bumper&#39; connecté sur le port 3.</span>
+
+        <span class="comment">// Met à 1 le port 3 :</span>
+        <a class="code" href="io_8h.html#a300c49c27f1e0ad25d408906c2c2cf29" title="Met à 1 une sortie numérique.">SetDigitalIO</a>(3);
+
+        <a class="code" href="timer_8h.html#a5269998c8dd050fbd8ff1c958f9a59cd" title="Attendre un certain délai en microsecondes.">WaitUs</a>(10000);
+
+        <span class="comment">// Met à 0 le port 3:</span>
+        <a class="code" href="io_8h.html#a3e0c722a094b4073fd40719f307da427" title="Met à 0 une sortie numérique.">ClearDigitalIO</a>(3);
+
+        <span class="comment">// Lecture du port 4 :</span>
+        result = <a class="code" href="io_8h.html#a756bb99fbd93ec8db209ea88efea3331" title="Récupérer l&amp;#39;état du port (0 ou 1).">GetDigitalIO</a>(4);
+
+        <span class="keywordflow">return</span> 0;
+}
+</pre></div> <hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="a3e0c722a094b4073fd40719f307da427"></a><!-- doxytag: member="io.h::ClearDigitalIO" ref="a3e0c722a094b4073fd40719f307da427" args="(UInt8 port)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ClearDigitalIO </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Met à 0 une sortie numérique. </p>
+<p>Ne fonctionne que si un capteur 'sortie numérique' est connecté sur le port.</p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Numéro du port (entre 1 et 8). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac3a79636520bf7882914092ce0a6536c"></a><!-- doxytag: member="io.h::ClearLed" ref="ac3a79636520bf7882914092ce0a6536c" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ClearLed </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Eteint la led arriére du robot. </p>
+
+</div>
+</div>
+<a class="anchor" id="af8acc12fad324753fb45dbcefab4edf9"></a><!-- doxytag: member="io.h::GetButton" ref="af8acc12fad324753fb45dbcefab4edf9" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UInt8 GetButton </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Récupérer l'état du bouton arriére du robot. </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>1 si le bouton est pressé, sinon 0. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a756bb99fbd93ec8db209ea88efea3331"></a><!-- doxytag: member="io.h::GetDigitalIO" ref="a756bb99fbd93ec8db209ea88efea3331" args="(UInt8 port)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UInt32 GetDigitalIO </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Récupérer l'état du port (0 ou 1). </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Numéro du port de l'entrée numérique (entre 1 et 8). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>0 ou 1. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a300c49c27f1e0ad25d408906c2c2cf29"></a><!-- doxytag: member="io.h::SetDigitalIO" ref="a300c49c27f1e0ad25d408906c2c2cf29" args="(UInt8 port)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetDigitalIO </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Met à 1 une sortie numérique. </p>
+<p>Ne fonctionne que si un capteur 'sortie numérique' est connecté sur le port.</p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Numéro du port (entre 1 et 8). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="add2c9aba750cb4a20fd6162c35a02356"></a><!-- doxytag: member="io.h::SetLed" ref="add2c9aba750cb4a20fd6162c35a02356" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetLed </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Allume la led arriére du robot. </p>
+
+</div>
+</div>
+</div>
+<!-- 
+	Author : Baptiste Burles. POB-Technology
+	Date : 10/10/2005
+	
+	This is the html footer for the Doxygen doc.
+	
+-->
+<html>
+
+<p>
+
+<center>
+	<hr size="1"><address style="align: right;"><small>Generated by&nbsp;
+	<a href="http://www.doxygen.org/index.html">
+	<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> </small></address>
+	
+	
+	<address style="align: right;"><small>
+	This is a documentation from 
+	<a href="http://www.pob-technology.com">
+	<img src="LOGO_POB.JPG" align="middle" border="0"></a> All rights reserved.
+	</small></address>
+	
+</center>
+
+</html>

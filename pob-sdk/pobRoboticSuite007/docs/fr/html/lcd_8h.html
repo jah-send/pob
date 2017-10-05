@@ -1,0 +1,534 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Librairie POB-Robotics-Suite: Référence du fichier lcd.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.7.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Portée&nbsp;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#typedef-members">Définition de type</a> &#124;
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<h1>Référence du fichier lcd.h</h1>  </div>
+</div>
+<div class="contents">
+
+<p>Fonctions de l'écran LCD.  
+<a href="#_details">Plus de détails...</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__scroll__option__.html">_scroll_option_</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Structure de défilement.  <a href="struct__scroll__option__.html#_details">Plus de détails...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="typedef-members"></a>
+Définition de type</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="lcd_8h.html#a9e8530d52c060ad87ba769a6309c0c1d">_videomode_</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd_8h.html#ab365290052f557432bf2cee779845eb2">VIDEOMODE</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Type de vidéo.  <a href="#ab365290052f557432bf2cee779845eb2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="lcd_8h.html#ae0e1edcd2dfea54a3b862dc9eb3e22a8">_scroll_mode_</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd_8h.html#aca4820d66c489947f2d196e35e329d27">SCROLL_MODE</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Type de défilement.  <a href="#aca4820d66c489947f2d196e35e329d27"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="lcd_8h.html#aed970ec9d2c0241bc33159b07264af9a">_scroll_sens_</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd_8h.html#acbd5b0ec0f9409eb973a3bf770e24c80">SCROLL_SENS</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sens du défilement.  <a href="#acbd5b0ec0f9409eb973a3bf770e24c80"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__scroll__option__.html">_scroll_option_</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd_8h.html#aa15894ce783ed24ea610755b3be1bb0a">ScrollOption</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Structure de défilement.  <a href="#aa15894ce783ed24ea610755b3be1bb0a"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd_8h.html#a9e8530d52c060ad87ba769a6309c0c1d">_videomode_</a> { <a class="el" href="lcd_8h.html#a9e8530d52c060ad87ba769a6309c0c1da6f2bd066f0f8e312aa157cc39d6c0e38">VIDEOMODE_NORMAL</a> =  0, 
+<a class="el" href="lcd_8h.html#a9e8530d52c060ad87ba769a6309c0c1da55df7aca38a9120d9c44f83487d91f1e">VIDEOMODE_REVERSE</a> =  1
+ }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>Type de vidéo. </p>
+ <a href="lcd_8h.html#a9e8530d52c060ad87ba769a6309c0c1d">Plus de détails...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd_8h.html#ae0e1edcd2dfea54a3b862dc9eb3e22a8">_scroll_mode_</a> { <a class="el" href="lcd_8h.html#ae0e1edcd2dfea54a3b862dc9eb3e22a8aee77096c6d7be1189565c4446918d57c">SCROLL_MODE_STOP</a> =  0, 
+<a class="el" href="lcd_8h.html#ae0e1edcd2dfea54a3b862dc9eb3e22a8aebfd61d4c4335dd3f8efc0a0df31c879">SCROLL_MODE_LOOP</a> =  1, 
+<a class="el" href="lcd_8h.html#ae0e1edcd2dfea54a3b862dc9eb3e22a8ac6d273ce8fb572eca829c41a16d3c274">SCROLL_MODE_REBOUND</a> =  2
+ }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>Type de défilement. </p>
+ <a href="lcd_8h.html#ae0e1edcd2dfea54a3b862dc9eb3e22a8">Plus de détails...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd_8h.html#aed970ec9d2c0241bc33159b07264af9a">_scroll_sens_</a> { <a class="el" href="lcd_8h.html#aed970ec9d2c0241bc33159b07264af9aa6bc4e89febdf88b84b7fb55d037dec0d">SCROLL_LEFT_RIGHT</a> =  1, 
+<a class="el" href="lcd_8h.html#aed970ec9d2c0241bc33159b07264af9aa0f8dec940c14c5d1b5aa74e3f7624fcc">SCROLL_RIGHT_LEFT</a> =  2
+ }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>Sens du défilement. </p>
+ <a href="lcd_8h.html#aed970ec9d2c0241bc33159b07264af9a">Plus de détails...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd_8h.html#a4bdc2ba2bdd2a27781975a5c1edbc387">SetLCDVideoMode</a> (<a class="el" href="lcd_8h.html#ab365290052f557432bf2cee779845eb2">VIDEOMODE</a> videomode)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Configure le type de vidéo pour l'écran LCD.  <a href="#a4bdc2ba2bdd2a27781975a5c1edbc387"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd_8h.html#aec73a905a71089b2caa70553ac375298">ClearLCDScreen</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Effacer l'écran LCD.  <a href="#aec73a905a71089b2caa70553ac375298"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd_8h.html#aecf7c105c4672dd31ea05f1051ade819">SetLCDText</a> (UInt8 *text, UInt8 textLen)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Afficher un texte sur l'écran LCD.  <a href="#aecf7c105c4672dd31ea05f1051ade819"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd_8h.html#af76428375acbe80adf123c6ec5f830bb">SetLCDGraphic</a> (UInt8 *buffer, UInt8 len)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Afficher un tableau de pixel à l'écran.  <a href="#af76428375acbe80adf123c6ec5f830bb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd_8h.html#a81ca4d66d922c3267cbf634ffd26fe54">SetLCDScrollParam</a> (<a class="el" href="struct__scroll__option__.html">ScrollOption</a> *option)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Configurer le défilement de l'écran LCD.  <a href="#a81ca4d66d922c3267cbf634ffd26fe54"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd_8h.html#aa2d6e0ba33916cc7d0bb2b4fddec8148">SetLCDScrollText</a> (UInt8 *text, UInt8 textLen)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche du texte à l'écran et prépare le défilement de ce texte.  <a href="#aa2d6e0ba33916cc7d0bb2b4fddec8148"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd_8h.html#add2511e4d3d9c5e0a3737dc116dc5657">StartLCDScroll</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Démarre le défilement.  <a href="#add2511e4d3d9c5e0a3737dc116dc5657"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd_8h.html#af044f8430df4bd6ec6131e49ba9158b5">StopLCDScroll</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Arrête le défilement.  <a href="#af044f8430df4bd6ec6131e49ba9158b5"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Description détaillée</h2>
+<p>Fonctions de l'écran LCD. </p>
+<p><a class="anchor" id="lcd"></a></p>
+<p>Le POB-Robotics-Suite a un écran lcd avec une taille de 60 pixels par 8 pixels (largeur / hauteur).</p>
+<p>Vous pouvez afficher du texte ou envoyer directement les pixels à l'écran pour afficher une petite image.</p>
+<dl class="user"><dt><b>Afficher du texte sur l'écran LCD.</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment"><span class="preprocessor"> #include &lt;<a class="code" href="pob_robotic_suite_8h.html" title="Fichier En tête principale du POB-Robotics-Suite.">pobRoboticSuite.h</a>&gt;</span>
+
+ <span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)
+ {
+
+          <span class="comment">// Initialisation du matériel Pob-Robotics-Suite :</span>
+          <a class="code" href="pob_robotic_suite_8h.html#a9c7b6f7049447d5d9103ab928bdb4dd2" title="Initialiser le microcontrôleur du POB-Robotics-Suite.">InitCpu</a>();
+          <a class="code" href="_sensor_8h.html#a43a000f01e2871fa6ce80b03d7fbb0bf" title="Initialiser le matériel du POB-Robotics-Suite.">InitRobot</a>();
+
+          <span class="comment">// Afficher le texte à l&#39;écran :</span>
+          <a class="code" href="lcd_8h.html#aecf7c105c4672dd31ea05f1051ade819" title="Afficher un texte sur l&amp;#39;écran LCD.">SetLCDText</a>(<span class="stringliteral">&quot;Hello !&quot;</span>,7);
+
+          <span class="keywordflow">while</span>(1)
+          {
+          }
+
+          <span class="keywordflow">return</span> 0;
+ }
+</pre></div> <hr/><h2>Documentation des définitions de type</h2>
+<a class="anchor" id="aca4820d66c489947f2d196e35e329d27"></a><!-- doxytag: member="lcd.h::SCROLL_MODE" ref="aca4820d66c489947f2d196e35e329d27" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="lcd_8h.html#ae0e1edcd2dfea54a3b862dc9eb3e22a8">_scroll_mode_</a>  <a class="el" href="lcd_8h.html#aca4820d66c489947f2d196e35e329d27">SCROLL_MODE</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Type de défilement. </p>
+
+</div>
+</div>
+<a class="anchor" id="acbd5b0ec0f9409eb973a3bf770e24c80"></a><!-- doxytag: member="lcd.h::SCROLL_SENS" ref="acbd5b0ec0f9409eb973a3bf770e24c80" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="lcd_8h.html#aed970ec9d2c0241bc33159b07264af9a">_scroll_sens_</a>  <a class="el" href="lcd_8h.html#acbd5b0ec0f9409eb973a3bf770e24c80">SCROLL_SENS</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sens du défilement. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa15894ce783ed24ea610755b3be1bb0a"></a><!-- doxytag: member="lcd.h::ScrollOption" ref="aa15894ce783ed24ea610755b3be1bb0a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__scroll__option__.html">_scroll_option_</a>  <a class="el" href="struct__scroll__option__.html">ScrollOption</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Structure de défilement. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab365290052f557432bf2cee779845eb2"></a><!-- doxytag: member="lcd.h::VIDEOMODE" ref="ab365290052f557432bf2cee779845eb2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="lcd_8h.html#a9e8530d52c060ad87ba769a6309c0c1d">_videomode_</a>  <a class="el" href="lcd_8h.html#ab365290052f557432bf2cee779845eb2">VIDEOMODE</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Type de vidéo. </p>
+
+</div>
+</div>
+<hr/><h2>Documentation du type de l'énumération</h2>
+<a class="anchor" id="ae0e1edcd2dfea54a3b862dc9eb3e22a8"></a><!-- doxytag: member="lcd.h::_scroll_mode_" ref="ae0e1edcd2dfea54a3b862dc9eb3e22a8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="lcd_8h.html#ae0e1edcd2dfea54a3b862dc9eb3e22a8">_scroll_mode_</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Type de défilement. </p>
+<dl><dt><b>Valeurs énumérées: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="ae0e1edcd2dfea54a3b862dc9eb3e22a8aee77096c6d7be1189565c4446918d57c"></a><!-- doxytag: member="SCROLL_MODE_STOP" ref="ae0e1edcd2dfea54a3b862dc9eb3e22a8aee77096c6d7be1189565c4446918d57c" args="" -->SCROLL_MODE_STOP</em>&nbsp;</td><td>
+<p>Stop after scrolling </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ae0e1edcd2dfea54a3b862dc9eb3e22a8aebfd61d4c4335dd3f8efc0a0df31c879"></a><!-- doxytag: member="SCROLL_MODE_LOOP" ref="ae0e1edcd2dfea54a3b862dc9eb3e22a8aebfd61d4c4335dd3f8efc0a0df31c879" args="" -->SCROLL_MODE_LOOP</em>&nbsp;</td><td>
+<p>Play in loop the text </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ae0e1edcd2dfea54a3b862dc9eb3e22a8ac6d273ce8fb572eca829c41a16d3c274"></a><!-- doxytag: member="SCROLL_MODE_REBOUND" ref="ae0e1edcd2dfea54a3b862dc9eb3e22a8ac6d273ce8fb572eca829c41a16d3c274" args="" -->SCROLL_MODE_REBOUND</em>&nbsp;</td><td>
+<p>Rebound the text when reach end of text. </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aed970ec9d2c0241bc33159b07264af9a"></a><!-- doxytag: member="lcd.h::_scroll_sens_" ref="aed970ec9d2c0241bc33159b07264af9a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="lcd_8h.html#aed970ec9d2c0241bc33159b07264af9a">_scroll_sens_</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sens du défilement. </p>
+<dl><dt><b>Valeurs énumérées: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="aed970ec9d2c0241bc33159b07264af9aa6bc4e89febdf88b84b7fb55d037dec0d"></a><!-- doxytag: member="SCROLL_LEFT_RIGHT" ref="aed970ec9d2c0241bc33159b07264af9aa6bc4e89febdf88b84b7fb55d037dec0d" args="" -->SCROLL_LEFT_RIGHT</em>&nbsp;</td><td>
+<p>Text go left to right </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aed970ec9d2c0241bc33159b07264af9aa0f8dec940c14c5d1b5aa74e3f7624fcc"></a><!-- doxytag: member="SCROLL_RIGHT_LEFT" ref="aed970ec9d2c0241bc33159b07264af9aa0f8dec940c14c5d1b5aa74e3f7624fcc" args="" -->SCROLL_RIGHT_LEFT</em>&nbsp;</td><td>
+<p>Text go to right to left </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9e8530d52c060ad87ba769a6309c0c1d"></a><!-- doxytag: member="lcd.h::_videomode_" ref="a9e8530d52c060ad87ba769a6309c0c1d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="lcd_8h.html#a9e8530d52c060ad87ba769a6309c0c1d">_videomode_</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Type de vidéo. </p>
+<dl><dt><b>Valeurs énumérées: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a9e8530d52c060ad87ba769a6309c0c1da6f2bd066f0f8e312aa157cc39d6c0e38"></a><!-- doxytag: member="VIDEOMODE_NORMAL" ref="a9e8530d52c060ad87ba769a6309c0c1da6f2bd066f0f8e312aa157cc39d6c0e38" args="" -->VIDEOMODE_NORMAL</em>&nbsp;</td><td>
+<p>Normal mode (Black on white) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a9e8530d52c060ad87ba769a6309c0c1da55df7aca38a9120d9c44f83487d91f1e"></a><!-- doxytag: member="VIDEOMODE_REVERSE" ref="a9e8530d52c060ad87ba769a6309c0c1da55df7aca38a9120d9c44f83487d91f1e" args="" -->VIDEOMODE_REVERSE</em>&nbsp;</td><td>
+<p>Reverse mode (White on black) </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="aec73a905a71089b2caa70553ac375298"></a><!-- doxytag: member="lcd.h::ClearLCDScreen" ref="aec73a905a71089b2caa70553ac375298" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ClearLCDScreen </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Effacer l'écran LCD. </p>
+
+</div>
+</div>
+<a class="anchor" id="af76428375acbe80adf123c6ec5f830bb"></a><!-- doxytag: member="lcd.h::SetLCDGraphic" ref="af76428375acbe80adf123c6ec5f830bb" args="(UInt8 *buffer, UInt8 len)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetLCDGraphic </td>
+          <td>(</td>
+          <td class="paramtype">UInt8 *&nbsp;</td>
+          <td class="paramname"> <em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>len</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Afficher un tableau de pixel à l'écran. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>buffer</em>&nbsp;</td><td>Pointeur sur un tableau de pixel. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>len</em>&nbsp;</td><td>Taille du tableau. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a81ca4d66d922c3267cbf634ffd26fe54"></a><!-- doxytag: member="lcd.h::SetLCDScrollParam" ref="a81ca4d66d922c3267cbf634ffd26fe54" args="(ScrollOption *option)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetLCDScrollParam </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct__scroll__option__.html">ScrollOption</a> *&nbsp;</td>
+          <td class="paramname"> <em>option</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Configurer le défilement de l'écran LCD. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>option</em>&nbsp;</td><td>Un pointeur sur une structure valide ScrollOption. Vous avez à remplir cette structure !</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="user"><dt><b>Exemple de configuration.</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment"><span class="preprocessor"> #include &lt;<a class="code" href="pob_robotic_suite_8h.html" title="Fichier En tête principale du POB-Robotics-Suite.">pobRoboticSuite.h</a>&gt;</span>
+
+ <span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)
+ {
+          <span class="comment">// Création d&#39;une structure ScrollOption :</span>
+          <a class="code" href="struct__scroll__option__.html" title="Structure de défilement.">ScrollOption</a> option;
+
+          <span class="comment">// Initialisation du pob-robotics-suite:</span>
+          <a class="code" href="pob_robotic_suite_8h.html#a9c7b6f7049447d5d9103ab928bdb4dd2" title="Initialiser le microcontrôleur du POB-Robotics-Suite.">InitCpu</a>();
+          <a class="code" href="_sensor_8h.html#a43a000f01e2871fa6ce80b03d7fbb0bf" title="Initialiser le matériel du POB-Robotics-Suite.">InitRobot</a>();
+
+          <span class="comment">// Configuration des options de défilement : en boucle, texte de gauche à droite à une vitesse 2 :</span>
+          option.<a class="code" href="struct__scroll__option__.html#ad1496d47cf5d0555420b939d08468aaa">mode</a>     = SCROLL_MODE_LOOP;
+          option.<a class="code" href="struct__scroll__option__.html#a9861a5ef8d7a5787325efe6ac1a9f983">sens</a>     = SCROLL_LEFT_RIGHT;
+          option.<a class="code" href="struct__scroll__option__.html#a9e63c03330a3372493014976e73d795c">speed</a>    = 2;
+
+          <span class="comment">// Ecriture des paramétres de défilement :</span>
+          <a class="code" href="lcd_8h.html#a81ca4d66d922c3267cbf634ffd26fe54" title="Configurer le défilement de l&amp;#39;écran LCD.">SetLCDScrollParam</a>(&amp;option);
+
+          <span class="comment">// On écrit du texte à l&#39;écran :</span>
+          <a class="code" href="lcd_8h.html#aa2d6e0ba33916cc7d0bb2b4fddec8148" title="Affiche du texte à l&amp;#39;écran et prépare le défilement de ce texte.">SetLCDScrollText</a>(<span class="stringliteral">&quot;Hello from Pob-Robotics-Suite&quot;</span>,29);
+
+          <span class="comment">// ... et on lance le défilement !</span>
+          <a class="code" href="lcd_8h.html#add2511e4d3d9c5e0a3737dc116dc5657" title="Démarre le défilement.">StartLCDScroll</a>();
+
+          <span class="keywordflow">while</span>(1)
+          {
+          }
+
+          <span class="keywordflow">return</span> 0;
+ }
+</pre></div> 
+</div>
+</div>
+<a class="anchor" id="aa2d6e0ba33916cc7d0bb2b4fddec8148"></a><!-- doxytag: member="lcd.h::SetLCDScrollText" ref="aa2d6e0ba33916cc7d0bb2b4fddec8148" args="(UInt8 *text, UInt8 textLen)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetLCDScrollText </td>
+          <td>(</td>
+          <td class="paramtype">UInt8 *&nbsp;</td>
+          <td class="paramname"> <em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>textLen</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Affiche du texte à l'écran et prépare le défilement de ce texte. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>text</em>&nbsp;</td><td>Texte à afficher à l'écran. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>textLen</em>&nbsp;</td><td>Longueur du texte. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aecf7c105c4672dd31ea05f1051ade819"></a><!-- doxytag: member="lcd.h::SetLCDText" ref="aecf7c105c4672dd31ea05f1051ade819" args="(UInt8 *text, UInt8 textLen)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetLCDText </td>
+          <td>(</td>
+          <td class="paramtype">UInt8 *&nbsp;</td>
+          <td class="paramname"> <em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>textLen</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Afficher un texte sur l'écran LCD. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>text</em>&nbsp;</td><td>Texte à afficher. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>textLen</em>&nbsp;</td><td>Longueur du texte. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4bdc2ba2bdd2a27781975a5c1edbc387"></a><!-- doxytag: member="lcd.h::SetLCDVideoMode" ref="a4bdc2ba2bdd2a27781975a5c1edbc387" args="(VIDEOMODE videomode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetLCDVideoMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="lcd_8h.html#ab365290052f557432bf2cee779845eb2">VIDEOMODE</a>&nbsp;</td>
+          <td class="paramname"> <em>videomode</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Configure le type de vidéo pour l'écran LCD. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>videomode</em>&nbsp;</td><td>VIDEOMODE_NORMAL ou VIDEOMODE_REVERSE. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="add2511e4d3d9c5e0a3737dc116dc5657"></a><!-- doxytag: member="lcd.h::StartLCDScroll" ref="add2511e4d3d9c5e0a3737dc116dc5657" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StartLCDScroll </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Démarre le défilement. </p>
+
+</div>
+</div>
+<a class="anchor" id="af044f8430df4bd6ec6131e49ba9158b5"></a><!-- doxytag: member="lcd.h::StopLCDScroll" ref="af044f8430df4bd6ec6131e49ba9158b5" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StopLCDScroll </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Arrête le défilement. </p>
+
+</div>
+</div>
+</div>
+<!-- 
+	Author : Baptiste Burles. POB-Technology
+	Date : 10/10/2005
+	
+	This is the html footer for the Doxygen doc.
+	
+-->
+<html>
+
+<p>
+
+<center>
+	<hr size="1"><address style="align: right;"><small>Generated by&nbsp;
+	<a href="http://www.doxygen.org/index.html">
+	<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> </small></address>
+	
+	
+	<address style="align: right;"><small>
+	This is a documentation from 
+	<a href="http://www.pob-technology.com">
+	<img src="LOGO_POB.JPG" align="middle" border="0"></a> All rights reserved.
+	</small></address>
+	
+</center>
+
+</html>

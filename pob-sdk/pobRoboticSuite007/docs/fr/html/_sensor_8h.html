@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Librairie POB-Robotics-Suite: Référence du fichier Sensor.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.7.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Portée&nbsp;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Définition de type</a> &#124;
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<h1>Référence du fichier Sensor.h</h1>  </div>
+</div>
+<div class="contents">
+
+<p>Gestion des capteurs sur le POB-Robotics-Suite.  
+<a href="#_details">Plus de détails...</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___line_sensor.html">_LineSensor</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Line sensor structure.  <a href="struct___line_sensor.html#_details">Plus de détails...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sensor_8h.html#a0ee9332f9ca7b548078be8a7110bf0be">CHANNEL_NUMBER</a>&nbsp;&nbsp;&nbsp;8</td></tr>
+<tr><td colspan="2"><h2><a name="typedef-members"></a>
+Définition de type</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346">_sensor_type_</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sensor_8h.html#a696a5afb038bf85f756faecaaf96f5d4">SensorType</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sensor type enumeration.  <a href="#a696a5afb038bf85f756faecaaf96f5d4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct___line_sensor.html">_LineSensor</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sensor_8h.html#ad20d6ce5fea0b609a8374d0cf62eca25">LineSensor</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Line sensor structure.  <a href="#ad20d6ce5fea0b609a8374d0cf62eca25"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346">_sensor_type_</a> { <br/>
+&nbsp;&nbsp;<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346a42930aebfc771b2c7fa435dc7c89f44a">SENSOR_UNKNOWN</a> =  0, 
+<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346a78071f88b54677889c328f32e752cc0c">SENSOR_ANA_IN</a> =  1, 
+<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346a73095af4cd1342efbb9bdb614e9b0dad">SENSOR_ANA_DIG_IN</a> =  2, 
+<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346a1da5c16666263c01328def0cda2a3549">SENSOR_DIG_IN</a> =  3, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346a1d9daf367cd108d1a6e1255c5895af1a">SENSOR_DIG_OUT</a> =  4, 
+<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346ab5305ef862e9c817d6ec0e68384ad2c8">SENSOR_I2C</a> =  10, 
+<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346a588c38e528fdcf7efdf55b21ac1d6b2b">SENSOR_I2C_LINESENSOR_SHARP</a> =  11, 
+<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346a9929409ddfed3e46d413aa69caae4051">SENSOR_I2C_RGBLED</a> =  12, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346a105ea445ee624a57d175d216ec0b2cae">SENSOR_I2C_24LED</a> =  13, 
+<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346a45984d03e8adc5c2014c8bfccc80e28c">SENSOR_I2C_MOTORDRIVER</a> =  14, 
+<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346a8867c554a1474ee2e01eeb543adfcfec">SENSOR_I2C_ULTRASONIC</a> =  15, 
+<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346a4ca5f3467667a215e14dfa18c29bdaf5">SENSOR_I2C_TEMPSENSOR</a> =  16, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346abd056c210b9f0d0e68b2dba72ea83c5d">SENSOR_I2C_EEPROM</a> =  17, 
+<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346a96d5e1719d3149df113683a5921b835c">SENSOR_I2C_ACCELEROMETER</a> =  18, 
+<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346a932e2420af7515bc4faaca45e968bfd6">SENSOR_I2C_COMPASS</a> =  19, 
+<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346a0ecabcde394091a78cbd273fc89539b1">SENSOR_I2C_IRBEACON</a> =  20, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346ae92d95167ac4b664b7adf74f26fb0a06">SENSOR_I2C_IRDA</a> =  21, 
+<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346ad9a24a73d940542cfe3c0a39f26936dc">SENSOR_I2C_PORTEXPANDER</a> =  22, 
+<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346a4255aca6a66d302f369d1ebc0a01cc23">SENSOR_I2C_CAMERA</a> =  23, 
+<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346a367eb64bcc78048054ad93ca2ab72989">SENSOR_I2C_VEXPANDER</a> =  24, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346a09c96d16f242a1ccf1514fadef8aa44a">SENSOR_I2C_MINIVEX</a> =  25, 
+<a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346a0231e421ac9a2662b2a805cbef21de24">SENSOR_I2C_IRFOLLOWER</a> =  26
+<br/>
+ }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>Sensor type enumeration. </p>
+ <a href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346">Plus de détails...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_sensor_8h.html#a696a5afb038bf85f756faecaaf96f5d4">SensorType</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sensor_8h.html#a43a000f01e2871fa6ce80b03d7fbb0bf">InitRobot</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialiser le matériel du POB-Robotics-Suite.  <a href="#a43a000f01e2871fa6ce80b03d7fbb0bf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UInt32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sensor_8h.html#a649669c83d79600437c7b12556a2f39b">GetDistanceSensor</a> (UInt8 port)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Récupérer la distance d'un capteur de distance GP2D12 ou d'un suiveur de ligne.  <a href="#a649669c83d79600437c7b12556a2f39b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UInt8&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sensor_8h.html#ac8c0a5efd4caaed6d7fee79cec9bce93">GetIRBeacon</a> (UInt8 port, UInt8 beacon)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Récupérer le satus de la balise infrarouge.  <a href="#ac8c0a5efd4caaed6d7fee79cec9bce93"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UInt32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sensor_8h.html#a44fbd9cdc962f558d995cd32d023064d">GetLightSensor</a> (UInt8 port)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Récupérer l'intensité lumineuse du capteur de lumière.  <a href="#a44fbd9cdc962f558d995cd32d023064d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sensor_8h.html#acce606b29ccd86729c8491a485554493">GetValuesFromLineSensor</a> (UInt8 port, <a class="el" href="struct___line_sensor.html">LineSensor</a> *result)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Récupérer les valeurs des capteurs du capteur de ligne.  <a href="#acce606b29ccd86729c8491a485554493"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sensor_8h.html#a37efde56a0209243672889e3cb503bea">InitCamera</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialiser la caméra.  <a href="#a37efde56a0209243672889e3cb503bea"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Description détaillée</h2>
+<p>Gestion des capteurs sur le POB-Robotics-Suite. </p>
+<p><a class="anchor" id="sensor"></a></p>
+<p>Le POB-Robotics-Suite a 8 ports, identifier par un numéro de 1 à 8. Vous pouvez connecter différent capteurs sur les ports, comme:</p>
+<ul>
+<li>Capteur de lumière</li>
+<li>Capteur de distance infrarouge GP2D12</li>
+<li>Actionneur led RGB</li>
+<li>Capteur de contact</li>
+<li>Suiveur de ligne</li>
+<li>Caméra</li>
+<li>Balise infrarouge</li>
+</ul>
+<p>Si vous voulez lire directement une entrée analogique, il faut utiliser les <a class="el" href="analog_8h.html#analog">fonctions analogiques</a>. Si vous voulez utiliser les entrées/sorties numériques des ports, il faut utiliser les <a class="el" href="io_8h.html#io">fonctions d'entrées/sorties</a>.</p>
+<p>La fonction InitRobot initialise le bas niveau et tous les élements du robot: Vous n'avez pas à vous occuper de tout le bas niveau.</p>
+<dl class="user"><dt><b>Exemple: Initialiser le POB-Robotics-Suite et lire un capteur de distance</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment"><span class="preprocessor">#include &lt;<a class="code" href="pob_robotic_suite_8h.html" title="Fichier En tête principale du POB-Robotics-Suite.">pobRoboticSuite.h</a>&gt;</span>
+
+<span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)
+{
+    <a class="code" href="pob_robotic_suite_8h.html#aa542033556769a56f3e0b9488048d31d">UInt32</a> i;
+    <a class="code" href="pob_robotic_suite_8h.html#aa542033556769a56f3e0b9488048d31d">UInt32</a> value;
+    <a class="code" href="_sensor_8h.html#a696a5afb038bf85f756faecaaf96f5d4" title="Sensor type enumeration.">SensorType</a> * sensors;
+
+    <span class="comment">// Initialisation du matériel :</span>
+    <a class="code" href="pob_robotic_suite_8h.html#a9c7b6f7049447d5d9103ab928bdb4dd2" title="Initialiser le microcontrôleur du POB-Robotics-Suite.">InitCpu</a>();
+    <a class="code" href="uart_8h.html#ab4e096fc55bb04b09014ed6b3f501960" title="Initialiser l&amp;#39;UART0 (USB) en activant l&amp;#39;interruption en réception.">InitUART0Intr</a>(115200);
+    sensors = <a class="code" href="_sensor_8h.html#a43a000f01e2871fa6ce80b03d7fbb0bf" title="Initialiser le matériel du POB-Robotics-Suite.">InitRobot</a>();
+
+    <span class="keywordflow">for</span>(i=0;i&lt;CHANNEL_NUMBER;i++)
+    {
+        <a class="code" href="utils_8h.html#a685bcfc62f38aec68882d00ddd9166d1" title="Comme la fonction printf du langage C sur l&amp;#39;UART0.">DebugPrintf</a>(<span class="stringliteral">&quot;Sensor[%d] is: %d\r\n&quot;</span>, i, sensors[i] );
+    }
+
+
+    <span class="keywordflow">while</span>(1)
+    {
+        <span class="comment">// Lire la distance d&#39;un capteur de distance infrarouge GP2D12 :</span>
+
+        <span class="comment">// Vous avez à connecter ce capteur sur le port 1 pour cette exemple :</span>
+
+        value = <a class="code" href="_sensor_8h.html#a649669c83d79600437c7b12556a2f39b" title="Récupérer la distance d&amp;#39;un capteur de distance GP2D12 ou d&amp;#39;un suiveur de ligne.">GetDistanceSensor</a>(1);
+
+        <a class="code" href="utils_8h.html#a685bcfc62f38aec68882d00ddd9166d1" title="Comme la fonction printf du langage C sur l&amp;#39;UART0.">DebugPrintf</a>(<span class="stringliteral">&quot;Distance from port 1 is: %d\r\n&quot;</span>, value);
+    }
+
+    <span class="keywordflow">return</span> 0;
+}
+</pre></div> <hr/><h2>Documentation des macros</h2>
+<a class="anchor" id="a0ee9332f9ca7b548078be8a7110bf0be"></a><!-- doxytag: member="Sensor.h::CHANNEL_NUMBER" ref="a0ee9332f9ca7b548078be8a7110bf0be" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_NUMBER&nbsp;&nbsp;&nbsp;8</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Number of input/output channel </p>
+
+</div>
+</div>
+<hr/><h2>Documentation des définitions de type</h2>
+<a class="anchor" id="ad20d6ce5fea0b609a8374d0cf62eca25"></a><!-- doxytag: member="Sensor.h::LineSensor" ref="ad20d6ce5fea0b609a8374d0cf62eca25" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct___line_sensor.html">_LineSensor</a>  <a class="el" href="struct___line_sensor.html">LineSensor</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Line sensor structure. </p>
+
+</div>
+</div>
+<a class="anchor" id="a696a5afb038bf85f756faecaaf96f5d4"></a><!-- doxytag: member="Sensor.h::SensorType" ref="a696a5afb038bf85f756faecaaf96f5d4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346">_sensor_type_</a>  <a class="el" href="_sensor_8h.html#a696a5afb038bf85f756faecaaf96f5d4">SensorType</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sensor type enumeration. </p>
+
+</div>
+</div>
+<hr/><h2>Documentation du type de l'énumération</h2>
+<a class="anchor" id="af722afb1f36876ab8e759c44faf7d346"></a><!-- doxytag: member="Sensor.h::_sensor_type_" ref="af722afb1f36876ab8e759c44faf7d346" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_sensor_8h.html#af722afb1f36876ab8e759c44faf7d346">_sensor_type_</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sensor type enumeration. </p>
+<dl><dt><b>Valeurs énumérées: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346a42930aebfc771b2c7fa435dc7c89f44a"></a><!-- doxytag: member="SENSOR_UNKNOWN" ref="af722afb1f36876ab8e759c44faf7d346a42930aebfc771b2c7fa435dc7c89f44a" args="" -->SENSOR_UNKNOWN</em>&nbsp;</td><td>
+<p>[0] Unknown or no device found </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346a78071f88b54677889c328f32e752cc0c"></a><!-- doxytag: member="SENSOR_ANA_IN" ref="af722afb1f36876ab8e759c44faf7d346a78071f88b54677889c328f32e752cc0c" args="" -->SENSOR_ANA_IN</em>&nbsp;</td><td>
+<p>[1] An analog input </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346a73095af4cd1342efbb9bdb614e9b0dad"></a><!-- doxytag: member="SENSOR_ANA_DIG_IN" ref="af722afb1f36876ab8e759c44faf7d346a73095af4cd1342efbb9bdb614e9b0dad" args="" -->SENSOR_ANA_DIG_IN</em>&nbsp;</td><td>
+<p>[2] An analog input and a digital input </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346a1da5c16666263c01328def0cda2a3549"></a><!-- doxytag: member="SENSOR_DIG_IN" ref="af722afb1f36876ab8e759c44faf7d346a1da5c16666263c01328def0cda2a3549" args="" -->SENSOR_DIG_IN</em>&nbsp;</td><td>
+<p>[3] A digital input </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346a1d9daf367cd108d1a6e1255c5895af1a"></a><!-- doxytag: member="SENSOR_DIG_OUT" ref="af722afb1f36876ab8e759c44faf7d346a1d9daf367cd108d1a6e1255c5895af1a" args="" -->SENSOR_DIG_OUT</em>&nbsp;</td><td>
+<p>[4] A digital output </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346ab5305ef862e9c817d6ec0e68384ad2c8"></a><!-- doxytag: member="SENSOR_I2C" ref="af722afb1f36876ab8e759c44faf7d346ab5305ef862e9c817d6ec0e68384ad2c8" args="" -->SENSOR_I2C</em>&nbsp;</td><td>
+<p>[10] An Unknown I2C device </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346a588c38e528fdcf7efdf55b21ac1d6b2b"></a><!-- doxytag: member="SENSOR_I2C_LINESENSOR_SHARP" ref="af722afb1f36876ab8e759c44faf7d346a588c38e528fdcf7efdf55b21ac1d6b2b" args="" -->SENSOR_I2C_LINESENSOR_SHARP</em>&nbsp;</td><td>
+<p>[11] Line Follower </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346a9929409ddfed3e46d413aa69caae4051"></a><!-- doxytag: member="SENSOR_I2C_RGBLED" ref="af722afb1f36876ab8e759c44faf7d346a9929409ddfed3e46d413aa69caae4051" args="" -->SENSOR_I2C_RGBLED</em>&nbsp;</td><td>
+<p>[12] Red Green Blue Led device </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346a105ea445ee624a57d175d216ec0b2cae"></a><!-- doxytag: member="SENSOR_I2C_24LED" ref="af722afb1f36876ab8e759c44faf7d346a105ea445ee624a57d175d216ec0b2cae" args="" -->SENSOR_I2C_24LED</em>&nbsp;</td><td>
+<p>[13] 24 LED Display </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346a45984d03e8adc5c2014c8bfccc80e28c"></a><!-- doxytag: member="SENSOR_I2C_MOTORDRIVER" ref="af722afb1f36876ab8e759c44faf7d346a45984d03e8adc5c2014c8bfccc80e28c" args="" -->SENSOR_I2C_MOTORDRIVER</em>&nbsp;</td><td>
+<p>[14] Direct Current Motor </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346a8867c554a1474ee2e01eeb543adfcfec"></a><!-- doxytag: member="SENSOR_I2C_ULTRASONIC" ref="af722afb1f36876ab8e759c44faf7d346a8867c554a1474ee2e01eeb543adfcfec" args="" -->SENSOR_I2C_ULTRASONIC</em>&nbsp;</td><td>
+<p>[15] Ultrasonic sensor </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346a4ca5f3467667a215e14dfa18c29bdaf5"></a><!-- doxytag: member="SENSOR_I2C_TEMPSENSOR" ref="af722afb1f36876ab8e759c44faf7d346a4ca5f3467667a215e14dfa18c29bdaf5" args="" -->SENSOR_I2C_TEMPSENSOR</em>&nbsp;</td><td>
+<p>[16] Temperature sensor </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346abd056c210b9f0d0e68b2dba72ea83c5d"></a><!-- doxytag: member="SENSOR_I2C_EEPROM" ref="af722afb1f36876ab8e759c44faf7d346abd056c210b9f0d0e68b2dba72ea83c5d" args="" -->SENSOR_I2C_EEPROM</em>&nbsp;</td><td>
+<p>[17] Eeprom memory </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346a96d5e1719d3149df113683a5921b835c"></a><!-- doxytag: member="SENSOR_I2C_ACCELEROMETER" ref="af722afb1f36876ab8e759c44faf7d346a96d5e1719d3149df113683a5921b835c" args="" -->SENSOR_I2C_ACCELEROMETER</em>&nbsp;</td><td>
+<p>[18] Accelerometer sensor </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346a932e2420af7515bc4faaca45e968bfd6"></a><!-- doxytag: member="SENSOR_I2C_COMPASS" ref="af722afb1f36876ab8e759c44faf7d346a932e2420af7515bc4faaca45e968bfd6" args="" -->SENSOR_I2C_COMPASS</em>&nbsp;</td><td>
+<p>[19] Compass </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346a0ecabcde394091a78cbd273fc89539b1"></a><!-- doxytag: member="SENSOR_I2C_IRBEACON" ref="af722afb1f36876ab8e759c44faf7d346a0ecabcde394091a78cbd273fc89539b1" args="" -->SENSOR_I2C_IRBEACON</em>&nbsp;</td><td>
+<p>[20] IR Beacon </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346ae92d95167ac4b664b7adf74f26fb0a06"></a><!-- doxytag: member="SENSOR_I2C_IRDA" ref="af722afb1f36876ab8e759c44faf7d346ae92d95167ac4b664b7adf74f26fb0a06" args="" -->SENSOR_I2C_IRDA</em>&nbsp;</td><td>
+<p>[21] IRDA transceiver </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346ad9a24a73d940542cfe3c0a39f26936dc"></a><!-- doxytag: member="SENSOR_I2C_PORTEXPANDER" ref="af722afb1f36876ab8e759c44faf7d346ad9a24a73d940542cfe3c0a39f26936dc" args="" -->SENSOR_I2C_PORTEXPANDER</em>&nbsp;</td><td>
+<p>[22] Port expander </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346a4255aca6a66d302f369d1ebc0a01cc23"></a><!-- doxytag: member="SENSOR_I2C_CAMERA" ref="af722afb1f36876ab8e759c44faf7d346a4255aca6a66d302f369d1ebc0a01cc23" args="" -->SENSOR_I2C_CAMERA</em>&nbsp;</td><td>
+<p>[23] Camera </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346a367eb64bcc78048054ad93ca2ab72989"></a><!-- doxytag: member="SENSOR_I2C_VEXPANDER" ref="af722afb1f36876ab8e759c44faf7d346a367eb64bcc78048054ad93ca2ab72989" args="" -->SENSOR_I2C_VEXPANDER</em>&nbsp;</td><td>
+<p>[24] VEX port expander </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346a09c96d16f242a1ccf1514fadef8aa44a"></a><!-- doxytag: member="SENSOR_I2C_MINIVEX" ref="af722afb1f36876ab8e759c44faf7d346a09c96d16f242a1ccf1514fadef8aa44a" args="" -->SENSOR_I2C_MINIVEX</em>&nbsp;</td><td>
+<p>[25] MiniVEX port expander </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af722afb1f36876ab8e759c44faf7d346a0231e421ac9a2662b2a805cbef21de24"></a><!-- doxytag: member="SENSOR_I2C_IRFOLLOWER" ref="af722afb1f36876ab8e759c44faf7d346a0231e421ac9a2662b2a805cbef21de24" args="" -->SENSOR_I2C_IRFOLLOWER</em>&nbsp;</td><td>
+<p>[26] IR Follower </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="a649669c83d79600437c7b12556a2f39b"></a><!-- doxytag: member="Sensor.h::GetDistanceSensor" ref="a649669c83d79600437c7b12556a2f39b" args="(UInt8 port)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UInt32 GetDistanceSensor </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Récupérer la distance d'un capteur de distance GP2D12 ou d'un suiveur de ligne. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel le capteur est connecté (entre 1 et 8). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>La distance en millimétre. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac8c0a5efd4caaed6d7fee79cec9bce93"></a><!-- doxytag: member="Sensor.h::GetIRBeacon" ref="ac8c0a5efd4caaed6d7fee79cec9bce93" args="(UInt8 port, UInt8 beacon)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UInt8 GetIRBeacon </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>beacon</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Récupérer le satus de la balise infrarouge. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel le capteur est connecté (entre 1 et 8). </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>beacon</em>&nbsp;</td><td>Numéro de la balise à repérer (entre 0 et 15). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Status de la balise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a44fbd9cdc962f558d995cd32d023064d"></a><!-- doxytag: member="Sensor.h::GetLightSensor" ref="a44fbd9cdc962f558d995cd32d023064d" args="(UInt8 port)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UInt32 GetLightSensor </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Récupérer l'intensité lumineuse du capteur de lumière. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel le capteur est connecté (entre 1 et 8). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Un pourcentage de l'intensité lumineuse (0% = obscurité, 100% = en plein lumière). </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acce606b29ccd86729c8491a485554493"></a><!-- doxytag: member="Sensor.h::GetValuesFromLineSensor" ref="acce606b29ccd86729c8491a485554493" args="(UInt8 port, LineSensor *result)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GetValuesFromLineSensor </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct___line_sensor.html">LineSensor</a> *&nbsp;</td>
+          <td class="paramname"> <em>result</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Récupérer les valeurs des capteurs du capteur de ligne. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>result</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a37efde56a0209243672889e3cb503bea"></a><!-- doxytag: member="Sensor.h::InitCamera" ref="a37efde56a0209243672889e3cb503bea" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InitCamera </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Initialiser la caméra. </p>
+<dl class="warning"><dt><b>Avertissement:</b></dt><dd>Vous devez connecter la caméra sur le robot ! </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a43a000f01e2871fa6ce80b03d7fbb0bf"></a><!-- doxytag: member="Sensor.h::InitRobot" ref="a43a000f01e2871fa6ce80b03d7fbb0bf" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_sensor_8h.html#a696a5afb038bf85f756faecaaf96f5d4">SensorType</a>* InitRobot </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Initialiser le matériel du POB-Robotics-Suite. </p>
+<p>Cette fonction initialise le bus i2c0 comme maître, les entrées/sorties, les entrées analogiques et le bas niveau du robot. La fonction cherche aussi les capteurs branchés sur les ports et les initialisent un par un.</p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Un pointeur sur un tableau de SensorType. </dd></dl>
+
+</div>
+</div>
+</div>
+<!-- 
+	Author : Baptiste Burles. POB-Technology
+	Date : 10/10/2005
+	
+	This is the html footer for the Doxygen doc.
+	
+-->
+<html>
+
+<p>
+
+<center>
+	<hr size="1"><address style="align: right;"><small>Generated by&nbsp;
+	<a href="http://www.doxygen.org/index.html">
+	<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> </small></address>
+	
+	
+	<address style="align: right;"><small>
+	This is a documentation from 
+	<a href="http://www.pob-technology.com">
+	<img src="LOGO_POB.JPG" align="middle" border="0"></a> All rights reserved.
+	</small></address>
+	
+</center>
+
+</html>

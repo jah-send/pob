@@ -1,0 +1,34 @@
+; begin
+; end
+[POB-TOOLS Project]
+bitmap10 = bitmaps\triangle.bmp
+upload = pobbot_demo.hex
+bitmap0 = bitmaps\arrow.bmp
+bitmap6 = bitmaps\motor.bmp
+bitmap15 = bitmaps\load.bmp
+bitmap3 = bitmaps\down.bmp
+cfile2 = sources\pad.c
+pattern1 = patterns\tower.bmp
+bitmap13 = bitmaps\target.bmp
+cfileNb = 3
+pattern0 = patterns\cross.bmp
+bitmap16 = bitmaps\guntest.bmp
+bitmap5 = bitmaps\more.bmp
+bitmap11 = bitmaps\up.bmp
+bitmapNb = 18
+bitmap14 = bitmaps\fire.bmp
+bitmap1 = bitmaps\back.bmp
+patternNb = 3
+bitmap = .\.\sources\bitmap.h
+bitmap17 = bitmaps\fire_form.bmp
+bitmap12 = bitmaps\yourtest.bmp
+pattern2 = patterns\triangle.bmp
+bitmap2 = bitmaps\cross.bmp
+bitmap8 = bitmaps\test.bmp
+pattern = .\.\sources\pattern.h
+bitmap4 = bitmaps\less.bmp
+cfile1 = sources\menu.c
+bitmap7 = bitmaps\pobbot.bmp
+bitmap9 = bitmaps\toreturn.bmp
+hex = pobbot_demo.hex
+cfile0 = sources\main.c

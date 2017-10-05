@@ -1,0 +1,644 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Librairie POB-Robotics-Suite: Référence du fichier i2c.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.7.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Portée&nbsp;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">Définition de type</a> &#124;
+<a href="#enum-members">Énumérations</a>  </div>
+  <div class="headertitle">
+<h1>Référence du fichier i2c.h</h1>  </div>
+</div>
+<div class="contents">
+
+<p>Communication I2C.  
+<a href="#_details">Plus de détails...</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Résultat i2c.</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrpe0fc6bf36c29e93ca14d72149701275a"></a> </p>
+</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8h.html#a57d0c95ccd7c129288743e9674a9e96d">I2C_OK</a>&nbsp;&nbsp;&nbsp;0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8h.html#a516d5566e4ac72ba5138db73c6e4da09">I2C_ERROR</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8h.html#af7a60ebdec7f29c3d763be83d5cb156e">I2C_ERROR_START</a>&nbsp;&nbsp;&nbsp;2</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8h.html#ac171aec8f08250d86591803ddc847a69">I2C_ERROR_SEND</a>&nbsp;&nbsp;&nbsp;3</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8h.html#ad7e560082ad99fc26904882405b26377">I2C_BUSY</a>&nbsp;&nbsp;&nbsp;4</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8h.html#aa807e0444c9f3481843957d000bfa5e8">I2C_EMPTY</a>&nbsp;&nbsp;&nbsp;5</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8h.html#afa3215f0aa766367f5d34bee80929152">I2C_TIMEOUT</a>&nbsp;&nbsp;&nbsp;6</td></tr>
+<tr><td colspan="2"><h2><a name="typedef-members"></a>
+Définition de type</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="i2c_8h.html#ad23ef0673bfd36ec019648fe92ed4cd0">_i2c_speed</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8h.html#af85c33e4783450a49051aed899c23b89">I2C_SPEED</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Enumération des vitesses de bus I2C.  <a href="#af85c33e4783450a49051aed899c23b89"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8h.html#ad23ef0673bfd36ec019648fe92ed4cd0">_i2c_speed</a> { <a class="el" href="i2c_8h.html#ad23ef0673bfd36ec019648fe92ed4cd0af785fb2c3672e6e97ec4da18a0eee478">I2C_100_KHZ</a> = 0, 
+<a class="el" href="i2c_8h.html#ad23ef0673bfd36ec019648fe92ed4cd0a291e1ddf611460c41441e391cd2a414d">I2C_400_KHZ</a> = 1
+ }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>Enumération des vitesses de bus I2C. </p>
+ <a href="i2c_8h.html#ad23ef0673bfd36ec019648fe92ed4cd0">Plus de détails...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Fonctions I2C0 maître</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrp2b57696a7a9898557161b25416b5af64"></a>Utiliser le bus I2C0 en étant maître. </p>
+</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8h.html#a9f75c9ce9738297cf02cfeb32a4b2676">InitI2C0</a> (<a class="el" href="i2c_8h.html#af85c33e4783450a49051aed899c23b89">I2C_SPEED</a> speed)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initaliser le bus I2C0.  <a href="#a9f75c9ce9738297cf02cfeb32a4b2676"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UInt32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8h.html#a4ba95a012339fb74ce8aa085cbe0b809">SendBufferToI2C0</a> (UInt8 addr, UInt8 *buffer, UInt32 len)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Envoyer un tableau d'octets vers un esclave sur le bus I2C0.  <a href="#a4ba95a012339fb74ce8aa085cbe0b809"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UInt32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8h.html#ac2b2ce7aa65dbec9587ac541a352b38f">GetBufferFromI2C0</a> (UInt8 addr, UInt8 *buffer, UInt32 len)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Lit un tableau d'octets depuis un esclave sur le bus I2C0.  <a href="#ac2b2ce7aa65dbec9587ac541a352b38f"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Fonctions maître I2C1</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrp4d3638553c86ed6d254c22a764693d45"></a>Utiliser le bus U2C1 en étant maître. </p>
+</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8h.html#a6c790bab08a9073bd05e7386c683d7e4">InitI2C1</a> (<a class="el" href="i2c_8h.html#af85c33e4783450a49051aed899c23b89">I2C_SPEED</a> speed)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initaliser le bus I2C1 en mode maître i2c.  <a href="#a6c790bab08a9073bd05e7386c683d7e4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UInt32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8h.html#ac073be4975876c78782d89054a5e3bcf">SendBufferToI2C1</a> (UInt8 addr, UInt8 *buffer, UInt32 len)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Envoyer un tableau d'octets à un esclave I2C1.  <a href="#ac073be4975876c78782d89054a5e3bcf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UInt32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8h.html#aaf2e962b8383bf884bc4985f05c05533">GetBufferFromI2C1</a> (UInt8 addr, UInt8 *buffer, UInt32 len)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Recevoir un tableau d'octets depuis un esclave I2C1.  <a href="#aaf2e962b8383bf884bc4985f05c05533"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Fonctions esclave I2C0</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrp9b6e56f658700b59cc19e646cdeb48d2"></a>Utiliser le bus I2C0 en étant esclave. </p>
+</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8h.html#ac857023747a8d5accd5d59f0b101f05a">InitSlaveI2C0</a> (UInt8 address, <a class="el" href="i2c_8h.html#af85c33e4783450a49051aed899c23b89">I2C_SPEED</a> speed)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialiser le bus I2C0 en mode esclave.  <a href="#ac857023747a8d5accd5d59f0b101f05a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UInt8&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8h.html#ac43d00f16e736ee2901b3a10949c9d3d">GetBufferFromSlaveI2C0</a> (UInt8 **data)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Récupérer un buffer envoyé par un maître i2c.  <a href="#ac43d00f16e736ee2901b3a10949c9d3d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8h.html#a46f6d5fe0a23f85e27ebf8740e080b53">SetBufferToSlaveI2C0</a> (UInt8 *buffer, UInt8 size)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Envoyer un buffer sur le bus i2c.  <a href="#a46f6d5fe0a23f85e27ebf8740e080b53"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8h.html#a337e772e5e04594fce9ce7bb37479bd5">HaltSlaveI2C0</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Arrêter l'esclave ic2.  <a href="#a337e772e5e04594fce9ce7bb37479bd5"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Description détaillée</h2>
+<p>Communication I2C. </p>
+<p><a class="anchor" id="i2c"></a></p>
+<p>Le bus I2C est un bus série rapide avec un maître et de multiples esclaves (jusqu'à 128).</p>
+<p>Le POB-Robotics-Suite a deux bus I2C, nommé i2c0 et i2c1. Par défaut :</p>
+<ul>
+<li>i2c0 est utilisé pour relier les capteurs en tant que maître par le robot.</li>
+<li>i2c1 est connecté à l'eeprom et à la partie bas niveau du robot : N'utilisez pas ce bus si vous ne connaissez pas exactement le matériel !</li>
+</ul>
+<p>Beaucoup de capteur du POB-Robotics-Suite utilise le bus i2c.</p>
+<dl class="user"><dt><b>Lire et écrire des données.</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment"><span class="preprocessor">#include &lt;<a class="code" href="pob_robotic_suite_8h.html" title="Fichier En tête principale du POB-Robotics-Suite.">pobRoboticSuite.h</a>&gt;</span>
+
+<span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)
+{
+         <a class="code" href="pob_robotic_suite_8h.html#a0d35adb56185f81b48a3091f60862419">UInt8</a> buffer[4];
+
+         <a class="code" href="pob_robotic_suite_8h.html#a9c7b6f7049447d5d9103ab928bdb4dd2" title="Initialiser le microcontrôleur du POB-Robotics-Suite.">InitCpu</a>();
+
+         <span class="comment">// Cherche et initialise les capteur sur les ports du robot :</span>
+         <span class="comment">// InitRobot initialise le bus i2c0 à une vitesse de 400KHz en maître.</span>
+         <a class="code" href="_sensor_8h.html#a43a000f01e2871fa6ce80b03d7fbb0bf" title="Initialiser le matériel du POB-Robotics-Suite.">InitRobot</a>();
+
+         <span class="comment">// Ecrit 2 octets dans buffer :</span>
+         buffer[0] = 0xAA;
+         buffer[1] = 0x55;
+
+         <span class="comment">// Envoie le buffer à l&#39;esclave 0xB0 sur le bus i2c0 :</span>
+         <a class="code" href="i2c_8h.html#a4ba95a012339fb74ce8aa085cbe0b809" title="Envoyer un tableau d&amp;#39;octets vers un esclave sur le bus I2C0.">SendBufferToI2C0</a>(0xB0,buffer,2);
+
+         <span class="comment">// Lit 4 octets à l&#39;esclave 0xB0</span>
+         <a class="code" href="i2c_8h.html#ac2b2ce7aa65dbec9587ac541a352b38f" title="Lit un tableau d&amp;#39;octets depuis un esclave sur le bus I2C0.">GetBufferFromI2C0</a>(0xB0,buffer,4);
+
+         <span class="keywordflow">return</span> 0;
+}
+</pre></div> <hr/><h2>Documentation des macros</h2>
+<a class="anchor" id="ad7e560082ad99fc26904882405b26377"></a><!-- doxytag: member="i2c.h::I2C_BUSY" ref="ad7e560082ad99fc26904882405b26377" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I2C_BUSY&nbsp;&nbsp;&nbsp;4</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>i2c bus is busy. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa807e0444c9f3481843957d000bfa5e8"></a><!-- doxytag: member="i2c.h::I2C_EMPTY" ref="aa807e0444c9f3481843957d000bfa5e8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I2C_EMPTY&nbsp;&nbsp;&nbsp;5</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>i2c buffer is empty. </p>
+
+</div>
+</div>
+<a class="anchor" id="a516d5566e4ac72ba5138db73c6e4da09"></a><!-- doxytag: member="i2c.h::I2C_ERROR" ref="a516d5566e4ac72ba5138db73c6e4da09" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I2C_ERROR&nbsp;&nbsp;&nbsp;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Error on i2c bus. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac171aec8f08250d86591803ddc847a69"></a><!-- doxytag: member="i2c.h::I2C_ERROR_SEND" ref="ac171aec8f08250d86591803ddc847a69" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I2C_ERROR_SEND&nbsp;&nbsp;&nbsp;3</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Error when send data on i2c bus. </p>
+
+</div>
+</div>
+<a class="anchor" id="af7a60ebdec7f29c3d763be83d5cb156e"></a><!-- doxytag: member="i2c.h::I2C_ERROR_START" ref="af7a60ebdec7f29c3d763be83d5cb156e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I2C_ERROR_START&nbsp;&nbsp;&nbsp;2</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Error when send START bit on i2c bus. </p>
+
+</div>
+</div>
+<a class="anchor" id="a57d0c95ccd7c129288743e9674a9e96d"></a><!-- doxytag: member="i2c.h::I2C_OK" ref="a57d0c95ccd7c129288743e9674a9e96d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I2C_OK&nbsp;&nbsp;&nbsp;0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Last operation on i2c bus is OK. </p>
+
+</div>
+</div>
+<a class="anchor" id="afa3215f0aa766367f5d34bee80929152"></a><!-- doxytag: member="i2c.h::I2C_TIMEOUT" ref="afa3215f0aa766367f5d34bee80929152" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I2C_TIMEOUT&nbsp;&nbsp;&nbsp;6</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Operation timeout on i2c bus </p>
+
+</div>
+</div>
+<hr/><h2>Documentation des définitions de type</h2>
+<a class="anchor" id="af85c33e4783450a49051aed899c23b89"></a><!-- doxytag: member="i2c.h::I2C_SPEED" ref="af85c33e4783450a49051aed899c23b89" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="i2c_8h.html#ad23ef0673bfd36ec019648fe92ed4cd0">_i2c_speed</a>  <a class="el" href="i2c_8h.html#af85c33e4783450a49051aed899c23b89">I2C_SPEED</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Enumération des vitesses de bus I2C. </p>
+
+</div>
+</div>
+<hr/><h2>Documentation du type de l'énumération</h2>
+<a class="anchor" id="ad23ef0673bfd36ec019648fe92ed4cd0"></a><!-- doxytag: member="i2c.h::_i2c_speed" ref="ad23ef0673bfd36ec019648fe92ed4cd0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="i2c_8h.html#ad23ef0673bfd36ec019648fe92ed4cd0">_i2c_speed</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Enumération des vitesses de bus I2C. </p>
+<dl><dt><b>Valeurs énumérées: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="ad23ef0673bfd36ec019648fe92ed4cd0af785fb2c3672e6e97ec4da18a0eee478"></a><!-- doxytag: member="I2C_100_KHZ" ref="ad23ef0673bfd36ec019648fe92ed4cd0af785fb2c3672e6e97ec4da18a0eee478" args="" -->I2C_100_KHZ</em>&nbsp;</td><td>
+<p>I2C speed frequency 100 KHz </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ad23ef0673bfd36ec019648fe92ed4cd0a291e1ddf611460c41441e391cd2a414d"></a><!-- doxytag: member="I2C_400_KHZ" ref="ad23ef0673bfd36ec019648fe92ed4cd0a291e1ddf611460c41441e391cd2a414d" args="" -->I2C_400_KHZ</em>&nbsp;</td><td>
+<p>I2C speed frequency 400 KHz </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="ac2b2ce7aa65dbec9587ac541a352b38f"></a><!-- doxytag: member="i2c.h::GetBufferFromI2C0" ref="ac2b2ce7aa65dbec9587ac541a352b38f" args="(UInt8 addr, UInt8 *buffer, UInt32 len)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UInt32 GetBufferFromI2C0 </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8 *&nbsp;</td>
+          <td class="paramname"> <em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt32&nbsp;</td>
+          <td class="paramname"> <em>len</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Lit un tableau d'octets depuis un esclave sur le bus I2C0. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>addr</em>&nbsp;</td><td>Adresse de l'esclave sur le bus I2C0. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>buffer</em>&nbsp;</td><td>Pointeur sur un tableau où stocker les données lues. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>len</em>&nbsp;</td><td>Nombre d'octets à lire depuis l'esclave I2C0. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>0 si aucune erreur, sinon code d'erreur. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaf2e962b8383bf884bc4985f05c05533"></a><!-- doxytag: member="i2c.h::GetBufferFromI2C1" ref="aaf2e962b8383bf884bc4985f05c05533" args="(UInt8 addr, UInt8 *buffer, UInt32 len)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UInt32 GetBufferFromI2C1 </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8 *&nbsp;</td>
+          <td class="paramname"> <em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt32&nbsp;</td>
+          <td class="paramname"> <em>len</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Recevoir un tableau d'octets depuis un esclave I2C1. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>addr</em>&nbsp;</td><td>Adresse de l'esclave I2C1. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>buffer</em>&nbsp;</td><td>Pointeur sur un tableau où écrire les octets reçus. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>len</em>&nbsp;</td><td>Nombre d'octets à lire depuis l'esclave. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>0 si aucune erreur, sinon code d'erreur. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac43d00f16e736ee2901b3a10949c9d3d"></a><!-- doxytag: member="i2c.h::GetBufferFromSlaveI2C0" ref="ac43d00f16e736ee2901b3a10949c9d3d" args="(UInt8 **data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UInt8 GetBufferFromSlaveI2C0 </td>
+          <td>(</td>
+          <td class="paramtype">UInt8 **&nbsp;</td>
+          <td class="paramname"> <em>data</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Récupérer un buffer envoyé par un maître i2c. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>Pointer sur les données reçues. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Nombre d'octets reçues (0 si aucune donnée n'est présente). </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a337e772e5e04594fce9ce7bb37479bd5"></a><!-- doxytag: member="i2c.h::HaltSlaveI2C0" ref="a337e772e5e04594fce9ce7bb37479bd5" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HaltSlaveI2C0 </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Arrêter l'esclave ic2. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9f75c9ce9738297cf02cfeb32a4b2676"></a><!-- doxytag: member="i2c.h::InitI2C0" ref="a9f75c9ce9738297cf02cfeb32a4b2676" args="(I2C_SPEED speed)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InitI2C0 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="i2c_8h.html#af85c33e4783450a49051aed899c23b89">I2C_SPEED</a>&nbsp;</td>
+          <td class="paramname"> <em>speed</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Initaliser le bus I2C0. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>speed</em>&nbsp;</td><td>Vitesse du bus I2C0. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6c790bab08a9073bd05e7386c683d7e4"></a><!-- doxytag: member="i2c.h::InitI2C1" ref="a6c790bab08a9073bd05e7386c683d7e4" args="(I2C_SPEED speed)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InitI2C1 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="i2c_8h.html#af85c33e4783450a49051aed899c23b89">I2C_SPEED</a>&nbsp;</td>
+          <td class="paramname"> <em>speed</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Initaliser le bus I2C1 en mode maître i2c. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>speed</em>&nbsp;</td><td>Vitesse du bus i2c. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac857023747a8d5accd5d59f0b101f05a"></a><!-- doxytag: member="i2c.h::InitSlaveI2C0" ref="ac857023747a8d5accd5d59f0b101f05a" args="(UInt8 address, I2C_SPEED speed)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InitSlaveI2C0 </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="i2c_8h.html#af85c33e4783450a49051aed899c23b89">I2C_SPEED</a>&nbsp;</td>
+          <td class="paramname"> <em>speed</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Initialiser le bus I2C0 en mode esclave. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>address</em>&nbsp;</td><td>Adresse esclave. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>speed</em>&nbsp;</td><td>Vitesse du bus i2c. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4ba95a012339fb74ce8aa085cbe0b809"></a><!-- doxytag: member="i2c.h::SendBufferToI2C0" ref="a4ba95a012339fb74ce8aa085cbe0b809" args="(UInt8 addr, UInt8 *buffer, UInt32 len)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UInt32 SendBufferToI2C0 </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8 *&nbsp;</td>
+          <td class="paramname"> <em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt32&nbsp;</td>
+          <td class="paramname"> <em>len</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Envoyer un tableau d'octets vers un esclave sur le bus I2C0. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>addr</em>&nbsp;</td><td>Adresse de l'esclave sur le bus I2C0. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>buffer</em>&nbsp;</td><td>Tableau à envoyer. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>len</em>&nbsp;</td><td>Longueur des données à envoyer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>0 si aucune erreur, sinon code d'erreur. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac073be4975876c78782d89054a5e3bcf"></a><!-- doxytag: member="i2c.h::SendBufferToI2C1" ref="ac073be4975876c78782d89054a5e3bcf" args="(UInt8 addr, UInt8 *buffer, UInt32 len)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UInt32 SendBufferToI2C1 </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8 *&nbsp;</td>
+          <td class="paramname"> <em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt32&nbsp;</td>
+          <td class="paramname"> <em>len</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Envoyer un tableau d'octets à un esclave I2C1. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>addr</em>&nbsp;</td><td>Adresse de l'esclave vers lequel envoyer. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>buffer</em>&nbsp;</td><td>Tableau à envoyer. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>len</em>&nbsp;</td><td>Nombre d'octets à envoyer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>0 si aucune erreur, sinon code d'erreur. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a46f6d5fe0a23f85e27ebf8740e080b53"></a><!-- doxytag: member="i2c.h::SetBufferToSlaveI2C0" ref="a46f6d5fe0a23f85e27ebf8740e080b53" args="(UInt8 *buffer, UInt8 size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetBufferToSlaveI2C0 </td>
+          <td>(</td>
+          <td class="paramtype">UInt8 *&nbsp;</td>
+          <td class="paramname"> <em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Envoyer un buffer sur le bus i2c. </p>
+<p>Attention, le buffer est effectivement envoyé lorsque le maître commence une opération de lecture sur le bus i2c!</p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>buffer</em>&nbsp;</td><td>Pointeur sur les données à envoyer. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>size</em>&nbsp;</td><td>Taille des données à envoyer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div>
+<!-- 
+	Author : Baptiste Burles. POB-Technology
+	Date : 10/10/2005
+	
+	This is the html footer for the Doxygen doc.
+	
+-->
+<html>
+
+<p>
+
+<center>
+	<hr size="1"><address style="align: right;"><small>Generated by&nbsp;
+	<a href="http://www.doxygen.org/index.html">
+	<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> </small></address>
+	
+	
+	<address style="align: right;"><small>
+	This is a documentation from 
+	<a href="http://www.pob-technology.com">
+	<img src="LOGO_POB.JPG" align="middle" border="0"></a> All rights reserved.
+	</small></address>
+	
+</center>
+
+</html>

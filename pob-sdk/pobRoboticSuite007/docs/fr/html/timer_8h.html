@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Librairie POB-Robotics-Suite: Référence du fichier timer.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.7.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Portée&nbsp;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<h1>Référence du fichier timer.h</h1>  </div>
+</div>
+<div class="contents">
+
+<p>Gestion du temps.  
+<a href="#_details">Plus de détails...</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a5269998c8dd050fbd8ff1c958f9a59cd">WaitUs</a> (UInt32 delayInUs)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Attendre un certain délai en microsecondes.  <a href="#a5269998c8dd050fbd8ff1c958f9a59cd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a66d803bbb86607dd36a6838bc89e77db">WaitMs</a> (UInt32 delayInMs)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Attendre un certain délai en millisecondes.  <a href="#a66d803bbb86607dd36a6838bc89e77db"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Fonctions d'horloge</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrp91c723588df9d1b33f91e8721f05e05a"></a>Récupère le temps du robot (en unité de 1ms ). </p>
+</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a4e733091a9ac0071a955bce5e0d14e0f">StartClock</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Démarre l'horloge !  <a href="#a4e733091a9ac0071a955bce5e0d14e0f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UInt32&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#aab062d45dbbb4b0fb103964ab5203605">GetClock</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Récupère l'horloge courante.  <a href="#aab062d45dbbb4b0fb103964ab5203605"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#acbffbad8314b59848b0e994b4a4cd175">StopClock</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Arrête l'horloge.  <a href="#acbffbad8314b59848b0e994b4a4cd175"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Fonctions Timer3</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrp72812f8123cc341284894ce5f0dd20b5"></a>Utilise l'interruption timer3. </p>
+</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a22b44e6d182798c630db2df4c1121b7f">InitTimer3</a> (UInt32 delay)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialiser le minuteur du Timer3.  <a href="#a22b44e6d182798c630db2df4c1121b7f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#ae328dd20f9241cbb90303ebbc8c701e0">StopTimer3</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Arrête l'interruption du Timer3.  <a href="#ae328dd20f9241cbb90303ebbc8c701e0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UInt8&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a0c48e79942c7991c52dc8ee3de0c8243">IsTimer3Overflow</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Est ce que le Timer3 a déclenché une interruption ?  <a href="#a0c48e79942c7991c52dc8ee3de0c8243"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#a822862a191b02c8975cd06041241df34">Timer3AttachFunction</a> (void(*Process)(void))</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Attacher une fonction au Timer3.  <a href="#a822862a191b02c8975cd06041241df34"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="timer_8h.html#aa459f9586e58789d008b72071dcca310">Timer3DetachFunction</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Enlève la fonction attachée au Timer3.  <a href="#aa459f9586e58789d008b72071dcca310"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Description détaillée</h2>
+<p>Gestion du temps. </p>
+<p><a class="anchor" id="timer"></a></p>
+<p>Gérer l'horloge et le temps sur le robot.</p>
+<dl class="user"><dt><b>Exemple Timer3</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment"><span class="preprocessor"> #include &lt;<a class="code" href="pob_robotic_suite_8h.html" title="Fichier En tête principale du POB-Robotics-Suite.">pobRoboticSuite.h</a>&gt;</span>
+
+ <a class="code" href="pob_robotic_suite_8h.html#a0d35adb56185f81b48a3091f60862419">UInt8</a> flag=0;
+
+ <span class="comment">// Cette fonction est appelée toutes les 500ms par l&#39;interruption Timer3 :</span>
+ <span class="keywordtype">void</span> Process(<span class="keywordtype">void</span>)
+ {
+ <span class="comment">// Blink led:</span>
+    <span class="keywordflow">if</span>(flag==0)
+    {
+        <a class="code" href="io_8h.html#add2c9aba750cb4a20fd6162c35a02356" title="Allume la led arriére du robot.">SetLed</a>();
+        flag=1;
+    }
+    <span class="keywordflow">else</span>
+    {
+        <a class="code" href="io_8h.html#ac3a79636520bf7882914092ce0a6536c" title="Eteint la led arriére du robot.">ClearLed</a>();
+        flag=0;
+    }
+ }
+
+ <span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)
+ {
+
+    <span class="comment">// Initialisation du cpu:</span>
+    <a class="code" href="pob_robotic_suite_8h.html#a9c7b6f7049447d5d9103ab928bdb4dd2" title="Initialiser le microcontrôleur du POB-Robotics-Suite.">InitCpu</a>();
+
+    <span class="comment">// Initialisation du timer3 avec une période de 500ms et attacher une fonction à ce timer :</span>
+    <a class="code" href="timer_8h.html#a22b44e6d182798c630db2df4c1121b7f" title="Initialiser le minuteur du Timer3.">InitTimer3</a>(500000);
+    <a class="code" href="timer_8h.html#a822862a191b02c8975cd06041241df34" title="Attacher une fonction au Timer3.">Timer3AttachFunction</a>(&amp;Process);
+
+    <span class="keywordflow">while</span>(1)
+    {
+    }
+ }
+</pre></div><dl class="user"><dt><b>Second exemple avec le Timer3</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment"><span class="preprocessor"> #include &lt;<a class="code" href="pob_robotic_suite_8h.html" title="Fichier En tête principale du POB-Robotics-Suite.">pobRoboticSuite.h</a>&gt;</span>
+
+ <a class="code" href="pob_robotic_suite_8h.html#a0d35adb56185f81b48a3091f60862419">UInt8</a> flag=0;
+
+ <span class="comment">// Cette fonction est appelée toutes les 500ms par la fonction main :</span>
+ <span class="keywordtype">void</span> Process(<span class="keywordtype">void</span>)
+ {
+    <span class="comment">// Blink led:</span>
+    <span class="keywordflow">if</span>(flag==0)
+    {
+        <a class="code" href="io_8h.html#add2c9aba750cb4a20fd6162c35a02356" title="Allume la led arriére du robot.">SetLed</a>();
+        flag=1;
+    }
+    <span class="keywordflow">else</span>
+    {
+        <a class="code" href="io_8h.html#ac3a79636520bf7882914092ce0a6536c" title="Eteint la led arriére du robot.">ClearLed</a>();
+        flag=0;
+    }
+ }
+
+ <span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)
+ {
+
+    <span class="comment">// Initialisation du cpu :</span>
+    <a class="code" href="pob_robotic_suite_8h.html#a9c7b6f7049447d5d9103ab928bdb4dd2" title="Initialiser le microcontrôleur du POB-Robotics-Suite.">InitCpu</a>();
+
+    <span class="comment">// Initialisation du timer3 avec une période 500ms :</span>
+    <a class="code" href="timer_8h.html#a22b44e6d182798c630db2df4c1121b7f" title="Initialiser le minuteur du Timer3.">InitTimer3</a>(500000);
+
+    <span class="comment">// Main loop:</span>
+    <span class="keywordflow">while</span>(1)
+    {
+        <span class="keywordflow">if</span>(<a class="code" href="timer_8h.html#a0c48e79942c7991c52dc8ee3de0c8243" title="Est ce que le Timer3 a déclenché une interruption ?">IsTimer3Overflow</a>()==1)
+        {
+            <span class="comment">// Si l&#39;interruption Timer3 est déclenché, alors la fonction Process est appelée :</span>
+            Process();
+        }
+    }
+ }
+</pre></div> <hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="aab062d45dbbb4b0fb103964ab5203605"></a><!-- doxytag: member="timer.h::GetClock" ref="aab062d45dbbb4b0fb103964ab5203605" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UInt32 GetClock </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Récupère l'horloge courante. </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Valeur de l'horloge en unité de 1 ms. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a22b44e6d182798c630db2df4c1121b7f"></a><!-- doxytag: member="timer.h::InitTimer3" ref="a22b44e6d182798c630db2df4c1121b7f" args="(UInt32 delay)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InitTimer3 </td>
+          <td>(</td>
+          <td class="paramtype">UInt32&nbsp;</td>
+          <td class="paramname"> <em>delay</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Initialiser le minuteur du Timer3. </p>
+<p>Une interruption sera générée à la fin du délai, puis l'interruption sera re-armée du même délai.</p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>delay</em>&nbsp;</td><td>Délai en microsecondes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0c48e79942c7991c52dc8ee3de0c8243"></a><!-- doxytag: member="timer.h::IsTimer3Overflow" ref="a0c48e79942c7991c52dc8ee3de0c8243" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UInt8 IsTimer3Overflow </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Est ce que le Timer3 a déclenché une interruption ? </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>1 si le Timer3 a déclenché, sinon 0. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4e733091a9ac0071a955bce5e0d14e0f"></a><!-- doxytag: member="timer.h::StartClock" ref="a4e733091a9ac0071a955bce5e0d14e0f" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StartClock </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Démarre l'horloge ! </p>
+<p>La fonction met à zéro l'horloge courante et initialise une nouvelle horloge sur le timer0. Unité de l'horloge : 1 ms. </p>
+
+</div>
+</div>
+<a class="anchor" id="acbffbad8314b59848b0e994b4a4cd175"></a><!-- doxytag: member="timer.h::StopClock" ref="acbffbad8314b59848b0e994b4a4cd175" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StopClock </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Arrête l'horloge. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae328dd20f9241cbb90303ebbc8c701e0"></a><!-- doxytag: member="timer.h::StopTimer3" ref="ae328dd20f9241cbb90303ebbc8c701e0" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StopTimer3 </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Arrête l'interruption du Timer3. </p>
+
+</div>
+</div>
+<a class="anchor" id="a822862a191b02c8975cd06041241df34"></a><!-- doxytag: member="timer.h::Timer3AttachFunction" ref="a822862a191b02c8975cd06041241df34" args="(void(*Process)(void))" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Timer3AttachFunction </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(void)&nbsp;</td>
+          <td class="paramname"> <em>Process</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Attacher une fonction au Timer3. </p>
+<p>A chaque interruption Timer3, la fonction attachée sera appelée.</p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>Process</em>&nbsp;</td><td>La fonction</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="user"><dt><b>Exemple pour attacher une fonction</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment"> <span class="keywordtype">void</span> MyProcess(<span class="keywordtype">void</span>)
+ {
+    <span class="comment">// Toutes les 7.5 ms, cette fonction sera appelée par le Timer3.</span>
+ }
+
+ <span class="keywordtype">void</span> main(<span class="keywordtype">void</span>)
+ {
+         <a class="code" href="pob_robotic_suite_8h.html#a9c7b6f7049447d5d9103ab928bdb4dd2" title="Initialiser le microcontrôleur du POB-Robotics-Suite.">InitCpu</a>();
+         <a class="code" href="_sensor_8h.html#a43a000f01e2871fa6ce80b03d7fbb0bf" title="Initialiser le matériel du POB-Robotics-Suite.">InitRobot</a>();
+
+         <span class="comment">// Initialiser le timer3 à une période de 7.5 ms :</span>
+         Timer3Init(7500);
+
+         <span class="comment">// On attache la fonction MyProcess au timer3</span>
+         <a class="code" href="timer_8h.html#a822862a191b02c8975cd06041241df34" title="Attacher une fonction au Timer3.">Timer3AttachFunction</a>(&amp;MyProcess);
+
+         <span class="keywordflow">while</span>(1)
+         {
+          <span class="comment">// Boucle principale</span>
+         }
+
+ }
+</pre></div> 
+</div>
+</div>
+<a class="anchor" id="aa459f9586e58789d008b72071dcca310"></a><!-- doxytag: member="timer.h::Timer3DetachFunction" ref="aa459f9586e58789d008b72071dcca310" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Timer3DetachFunction </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Enlève la fonction attachée au Timer3. </p>
+
+</div>
+</div>
+<a class="anchor" id="a66d803bbb86607dd36a6838bc89e77db"></a><!-- doxytag: member="timer.h::WaitMs" ref="a66d803bbb86607dd36a6838bc89e77db" args="(UInt32 delayInMs)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WaitMs </td>
+          <td>(</td>
+          <td class="paramtype">UInt32&nbsp;</td>
+          <td class="paramname"> <em>delayInMs</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Attendre un certain délai en millisecondes. </p>
+<p>Cette fonction utilise le Timer1 et elle est très précise.</p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>delayInMs</em>&nbsp;</td><td>Délai à attendre en millisecondes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5269998c8dd050fbd8ff1c958f9a59cd"></a><!-- doxytag: member="timer.h::WaitUs" ref="a5269998c8dd050fbd8ff1c958f9a59cd" args="(UInt32 delayInUs)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WaitUs </td>
+          <td>(</td>
+          <td class="paramtype">UInt32&nbsp;</td>
+          <td class="paramname"> <em>delayInUs</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Attendre un certain délai en microsecondes. </p>
+<p>Cette fonction utilise le Timer1 et elle est très précise.</p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>delayInUs</em>&nbsp;</td><td>Délai à attendre en microsecondes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div>
+<!-- 
+	Author : Baptiste Burles. POB-Technology
+	Date : 10/10/2005
+	
+	This is the html footer for the Doxygen doc.
+	
+-->
+<html>
+
+<p>
+
+<center>
+	<hr size="1"><address style="align: right;"><small>Generated by&nbsp;
+	<a href="http://www.doxygen.org/index.html">
+	<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> </small></address>
+	
+	
+	<address style="align: right;"><small>
+	This is a documentation from 
+	<a href="http://www.pob-technology.com">
+	<img src="LOGO_POB.JPG" align="middle" border="0"></a> All rights reserved.
+	</small></address>
+	
+</center>
+
+</html>

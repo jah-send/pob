@@ -1,0 +1,12 @@
+# pobtools project
+pobtools.version=4
+target.name=./turn_test.hex
+sources.number=3
+sources.0=./turn_test.c
+sources.1=./Functions.c
+sources.2=./pad.h
+bmps.number=1
+bmps.0=./bitmap/ASCII.bmp
+patterns.number=0
+sdk=pobeye2
+lang=C

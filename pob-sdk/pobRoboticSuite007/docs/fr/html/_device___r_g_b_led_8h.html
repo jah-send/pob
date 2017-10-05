@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Librairie POB-Robotics-Suite: Référence du fichier Device_RGBLed.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.7.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Portée&nbsp;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">Définition de type</a> &#124;
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<h1>Référence du fichier Device_RGBLed.h</h1>  </div>
+</div>
+<div class="contents">
+
+<p>Piloter la carte Led RGB.  
+<a href="#_details">Plus de détails...</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="typedef-members"></a>
+Définition de type</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaa">_rgb_led_color_</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_device___r_g_b_led_8h.html#ad03419d6485bbfe9c0ff04221e7e77e5">RgbLedColor</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Enumeration des couleurs de la led RGB.  <a href="#ad03419d6485bbfe9c0ff04221e7e77e5"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaa">_rgb_led_color_</a> { <br/>
+&nbsp;&nbsp;<a class="el" href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaaa39c82ac980818b54ff48a4a851666f24">RGB_LED_BLACK</a> =  0, 
+<a class="el" href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaaa35622bd9aa509c6ccc4d1d7535995dd6">RGB_LED_WHITE</a> =  1, 
+<a class="el" href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaaaf78dc8eb41c3638275dfd0abe8661f34">RGB_LED_COLDWHITE</a> =  2, 
+<a class="el" href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaaa21b28e9e43910c0023b763d83a720393">RGB_LED_RED</a> =  3, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaaaede83a36193e5d71bb40d697ad9aa800">RGB_LED_GREEN</a> =  4, 
+<a class="el" href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaaadf4a84a2d2f2206eea9e810b77db90ba">RGB_LED_BLUE</a> =  5, 
+<a class="el" href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaaa24c04be220035fe9af6efbba05020c51">RGB_LED_YELLOW</a> =  6, 
+<a class="el" href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaaaa64f12c00a444134d81cb41c463ffaca">RGB_LED_FUCHSIA</a> =  7, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaaa02277fd717f8cda1d237e92d3de02af0">RGB_LED_CYAN</a> =  8, 
+<a class="el" href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaaa6505a1ac7824607324f7c3cde5165e0f">RGB_LED_ORANGE</a> =  9, 
+<a class="el" href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaaae7e7939438918fec090890c0fa0b7727">RGB_LED_LIME</a> =  10, 
+<a class="el" href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaaa0dd93ec9f2dcf3fea85bbaf858bfe337">RGB_LED_PINK</a> =  11, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaaa1b37203bd7e687f91a0c8c81d0459176">RGB_LED_PURPLE</a> =  12, 
+<a class="el" href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaaaef9aa978a4dc0d40ad46215ed2c67d6d">RGB_LED_TURQUOISE</a> =  13, 
+<a class="el" href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaaa39fef1f6a1b9ef87350ce13ae8ecdf06">RGB_LED_AQUA</a> =  14, 
+<a class="el" href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaaae5bf004f9bdf460923372c1dcfa14c2d">RGB_LED_GOLD</a> =  15
+<br/>
+ }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>Enumeration des couleurs de la led RGB. </p>
+ <a href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaa">Plus de détails...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_device___r_g_b_led_8h.html#a7cc27576ba6f1705b5e087dd6a9d094f">SetColorOnRGBLed</a> (UInt8 port, UInt8 r, UInt8 g, UInt8 b)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Configurer la couleur à allumer sur la led RGB.  <a href="#a7cc27576ba6f1705b5e087dd6a9d094f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_device___r_g_b_led_8h.html#aa4c7817203941bfd38e4561cf4ad3540">SetPredefinedColorOnRGBLed</a> (UInt8 port, <a class="el" href="_device___r_g_b_led_8h.html#ad03419d6485bbfe9c0ff04221e7e77e5">RgbLedColor</a> predefcolor)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Allumer la led RGB suivant une couleur prédéfinie.  <a href="#aa4c7817203941bfd38e4561cf4ad3540"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_device___r_g_b_led_8h.html#afcf3c28806a309fbb25589341e6855d9">SetBlinkOnRGBLed</a> (UInt8 port, <a class="el" href="_device___r_g_b_led_8h.html#ad03419d6485bbfe9c0ff04221e7e77e5">RgbLedColor</a> color1, UInt8 time1, <a class="el" href="_device___r_g_b_led_8h.html#ad03419d6485bbfe9c0ff04221e7e77e5">RgbLedColor</a> color2, UInt8 time2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Faire clignoter la led RGB.  <a href="#afcf3c28806a309fbb25589341e6855d9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_device___r_g_b_led_8h.html#aa50566a9c172afd30ff053986c4b457a">SetSequenceOnRGBLed</a> (UInt8 port, UInt8 seq, UInt8 *buffer, UInt8 size)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Configurer une séquence de couleur dans la mémoire de la led RGB.  <a href="#aa50566a9c172afd30ff053986c4b457a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_device___r_g_b_led_8h.html#a615b76b7a60ec8aa68244a7ad552b2de">StartSequenceOnRGBLed</a> (UInt8 port, UInt8 seq, UInt8 repeat)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Jouer une séquence de couleur sur la led RGB.  <a href="#a615b76b7a60ec8aa68244a7ad552b2de"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Description détaillée</h2>
+<p>Piloter la carte Led RGB. </p>
+<p><a class="anchor" id="rgbled"></a></p>
+<p>La led RGB vous permet d'allumer une led de différentes couleurs. </p>
+<hr/><h2>Documentation des définitions de type</h2>
+<a class="anchor" id="ad03419d6485bbfe9c0ff04221e7e77e5"></a><!-- doxytag: member="Device_RGBLed.h::RgbLedColor" ref="ad03419d6485bbfe9c0ff04221e7e77e5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaa">_rgb_led_color_</a>  <a class="el" href="_device___r_g_b_led_8h.html#ad03419d6485bbfe9c0ff04221e7e77e5">RgbLedColor</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Enumeration des couleurs de la led RGB. </p>
+
+</div>
+</div>
+<hr/><h2>Documentation du type de l'énumération</h2>
+<a class="anchor" id="a6fdd1b5a64e0510d772c23c615b0cfaa"></a><!-- doxytag: member="Device_RGBLed.h::_rgb_led_color_" ref="a6fdd1b5a64e0510d772c23c615b0cfaa" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_device___r_g_b_led_8h.html#a6fdd1b5a64e0510d772c23c615b0cfaa">_rgb_led_color_</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Enumeration des couleurs de la led RGB. </p>
+<dl><dt><b>Valeurs énumérées: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a6fdd1b5a64e0510d772c23c615b0cfaaa39c82ac980818b54ff48a4a851666f24"></a><!-- doxytag: member="RGB_LED_BLACK" ref="a6fdd1b5a64e0510d772c23c615b0cfaaa39c82ac980818b54ff48a4a851666f24" args="" -->RGB_LED_BLACK</em>&nbsp;</td><td>
+<p>Black </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a6fdd1b5a64e0510d772c23c615b0cfaaa35622bd9aa509c6ccc4d1d7535995dd6"></a><!-- doxytag: member="RGB_LED_WHITE" ref="a6fdd1b5a64e0510d772c23c615b0cfaaa35622bd9aa509c6ccc4d1d7535995dd6" args="" -->RGB_LED_WHITE</em>&nbsp;</td><td>
+<p>White </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a6fdd1b5a64e0510d772c23c615b0cfaaaf78dc8eb41c3638275dfd0abe8661f34"></a><!-- doxytag: member="RGB_LED_COLDWHITE" ref="a6fdd1b5a64e0510d772c23c615b0cfaaaf78dc8eb41c3638275dfd0abe8661f34" args="" -->RGB_LED_COLDWHITE</em>&nbsp;</td><td>
+<p>ColdWhite </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a6fdd1b5a64e0510d772c23c615b0cfaaa21b28e9e43910c0023b763d83a720393"></a><!-- doxytag: member="RGB_LED_RED" ref="a6fdd1b5a64e0510d772c23c615b0cfaaa21b28e9e43910c0023b763d83a720393" args="" -->RGB_LED_RED</em>&nbsp;</td><td>
+<p>Red </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a6fdd1b5a64e0510d772c23c615b0cfaaaede83a36193e5d71bb40d697ad9aa800"></a><!-- doxytag: member="RGB_LED_GREEN" ref="a6fdd1b5a64e0510d772c23c615b0cfaaaede83a36193e5d71bb40d697ad9aa800" args="" -->RGB_LED_GREEN</em>&nbsp;</td><td>
+<p>Green </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a6fdd1b5a64e0510d772c23c615b0cfaaadf4a84a2d2f2206eea9e810b77db90ba"></a><!-- doxytag: member="RGB_LED_BLUE" ref="a6fdd1b5a64e0510d772c23c615b0cfaaadf4a84a2d2f2206eea9e810b77db90ba" args="" -->RGB_LED_BLUE</em>&nbsp;</td><td>
+<p>Blue </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a6fdd1b5a64e0510d772c23c615b0cfaaa24c04be220035fe9af6efbba05020c51"></a><!-- doxytag: member="RGB_LED_YELLOW" ref="a6fdd1b5a64e0510d772c23c615b0cfaaa24c04be220035fe9af6efbba05020c51" args="" -->RGB_LED_YELLOW</em>&nbsp;</td><td>
+<p>Yellow </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a6fdd1b5a64e0510d772c23c615b0cfaaaa64f12c00a444134d81cb41c463ffaca"></a><!-- doxytag: member="RGB_LED_FUCHSIA" ref="a6fdd1b5a64e0510d772c23c615b0cfaaaa64f12c00a444134d81cb41c463ffaca" args="" -->RGB_LED_FUCHSIA</em>&nbsp;</td><td>
+<p>Fuchsia </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a6fdd1b5a64e0510d772c23c615b0cfaaa02277fd717f8cda1d237e92d3de02af0"></a><!-- doxytag: member="RGB_LED_CYAN" ref="a6fdd1b5a64e0510d772c23c615b0cfaaa02277fd717f8cda1d237e92d3de02af0" args="" -->RGB_LED_CYAN</em>&nbsp;</td><td>
+<p>Cyan </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a6fdd1b5a64e0510d772c23c615b0cfaaa6505a1ac7824607324f7c3cde5165e0f"></a><!-- doxytag: member="RGB_LED_ORANGE" ref="a6fdd1b5a64e0510d772c23c615b0cfaaa6505a1ac7824607324f7c3cde5165e0f" args="" -->RGB_LED_ORANGE</em>&nbsp;</td><td>
+<p>Orange </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a6fdd1b5a64e0510d772c23c615b0cfaaae7e7939438918fec090890c0fa0b7727"></a><!-- doxytag: member="RGB_LED_LIME" ref="a6fdd1b5a64e0510d772c23c615b0cfaaae7e7939438918fec090890c0fa0b7727" args="" -->RGB_LED_LIME</em>&nbsp;</td><td>
+<p>Lime </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a6fdd1b5a64e0510d772c23c615b0cfaaa0dd93ec9f2dcf3fea85bbaf858bfe337"></a><!-- doxytag: member="RGB_LED_PINK" ref="a6fdd1b5a64e0510d772c23c615b0cfaaa0dd93ec9f2dcf3fea85bbaf858bfe337" args="" -->RGB_LED_PINK</em>&nbsp;</td><td>
+<p>Pink </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a6fdd1b5a64e0510d772c23c615b0cfaaa1b37203bd7e687f91a0c8c81d0459176"></a><!-- doxytag: member="RGB_LED_PURPLE" ref="a6fdd1b5a64e0510d772c23c615b0cfaaa1b37203bd7e687f91a0c8c81d0459176" args="" -->RGB_LED_PURPLE</em>&nbsp;</td><td>
+<p>Purple </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a6fdd1b5a64e0510d772c23c615b0cfaaaef9aa978a4dc0d40ad46215ed2c67d6d"></a><!-- doxytag: member="RGB_LED_TURQUOISE" ref="a6fdd1b5a64e0510d772c23c615b0cfaaaef9aa978a4dc0d40ad46215ed2c67d6d" args="" -->RGB_LED_TURQUOISE</em>&nbsp;</td><td>
+<p>Turquoise </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a6fdd1b5a64e0510d772c23c615b0cfaaa39fef1f6a1b9ef87350ce13ae8ecdf06"></a><!-- doxytag: member="RGB_LED_AQUA" ref="a6fdd1b5a64e0510d772c23c615b0cfaaa39fef1f6a1b9ef87350ce13ae8ecdf06" args="" -->RGB_LED_AQUA</em>&nbsp;</td><td>
+<p>Aqua </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a6fdd1b5a64e0510d772c23c615b0cfaaae5bf004f9bdf460923372c1dcfa14c2d"></a><!-- doxytag: member="RGB_LED_GOLD" ref="a6fdd1b5a64e0510d772c23c615b0cfaaae5bf004f9bdf460923372c1dcfa14c2d" args="" -->RGB_LED_GOLD</em>&nbsp;</td><td>
+<p>Gold </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="afcf3c28806a309fbb25589341e6855d9"></a><!-- doxytag: member="Device_RGBLed.h::SetBlinkOnRGBLed" ref="afcf3c28806a309fbb25589341e6855d9" args="(UInt8 port, RgbLedColor color1, UInt8 time1, RgbLedColor color2, UInt8 time2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetBlinkOnRGBLed </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_device___r_g_b_led_8h.html#ad03419d6485bbfe9c0ff04221e7e77e5">RgbLedColor</a>&nbsp;</td>
+          <td class="paramname"> <em>color1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>time1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_device___r_g_b_led_8h.html#ad03419d6485bbfe9c0ff04221e7e77e5">RgbLedColor</a>&nbsp;</td>
+          <td class="paramname"> <em>color2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>time2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Faire clignoter la led RGB. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel la led RGB est connectée (entre 1 à 8). </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>color1</em>&nbsp;</td><td>Première couleur. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>time1</em>&nbsp;</td><td>Temps durant laquel on affiche la couleur 1. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>color2</em>&nbsp;</td><td>Seconde couleur. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>time2</em>&nbsp;</td><td>Temps durant laquel on affiche la couleur 2. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7cc27576ba6f1705b5e087dd6a9d094f"></a><!-- doxytag: member="Device_RGBLed.h::SetColorOnRGBLed" ref="a7cc27576ba6f1705b5e087dd6a9d094f" args="(UInt8 port, UInt8 r, UInt8 g, UInt8 b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetColorOnRGBLed </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>b</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Configurer la couleur à allumer sur la led RGB. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel la led RGB est connectée (entre 1 à 8). </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>r</em>&nbsp;</td><td>Valeur de rouge. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>g</em>&nbsp;</td><td>Valeur de vert. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>b</em>&nbsp;</td><td>Valeur de bleu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa4c7817203941bfd38e4561cf4ad3540"></a><!-- doxytag: member="Device_RGBLed.h::SetPredefinedColorOnRGBLed" ref="aa4c7817203941bfd38e4561cf4ad3540" args="(UInt8 port, RgbLedColor predefcolor)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetPredefinedColorOnRGBLed </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_device___r_g_b_led_8h.html#ad03419d6485bbfe9c0ff04221e7e77e5">RgbLedColor</a>&nbsp;</td>
+          <td class="paramname"> <em>predefcolor</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Allumer la led RGB suivant une couleur prédéfinie. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel la led RGB est connectée (entre 1 à 8). </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>predefcolor</em>&nbsp;</td><td>Valeur prédéfinie d'une couleur. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa50566a9c172afd30ff053986c4b457a"></a><!-- doxytag: member="Device_RGBLed.h::SetSequenceOnRGBLed" ref="aa50566a9c172afd30ff053986c4b457a" args="(UInt8 port, UInt8 seq, UInt8 *buffer, UInt8 size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetSequenceOnRGBLed </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>seq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8 *&nbsp;</td>
+          <td class="paramname"> <em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Configurer une séquence de couleur dans la mémoire de la led RGB. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel la led RGB est connectée (entre 1 à 8). </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>seq</em>&nbsp;</td><td>Numéro de la séquence. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>buffer</em>&nbsp;</td><td>Pointeur sur un tableau de couleur à envoyer dans la led RGB. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>size</em>&nbsp;</td><td>Nombre de couleur dans le tableau. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a615b76b7a60ec8aa68244a7ad552b2de"></a><!-- doxytag: member="Device_RGBLed.h::StartSequenceOnRGBLed" ref="a615b76b7a60ec8aa68244a7ad552b2de" args="(UInt8 port, UInt8 seq, UInt8 repeat)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StartSequenceOnRGBLed </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>seq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>repeat</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Jouer une séquence de couleur sur la led RGB. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>Port sur lequel la led RGB est connectée (entre 1 à 8). </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>seq</em>&nbsp;</td><td>Numéro de la séquence à jouer. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>repeat</em>&nbsp;</td><td>0 pas de répetition, 1 pour jouer en boucle la séquence. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div>
+<!-- 
+	Author : Baptiste Burles. POB-Technology
+	Date : 10/10/2005
+	
+	This is the html footer for the Doxygen doc.
+	
+-->
+<html>
+
+<p>
+
+<center>
+	<hr size="1"><address style="align: right;"><small>Generated by&nbsp;
+	<a href="http://www.doxygen.org/index.html">
+	<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> </small></address>
+	
+	
+	<address style="align: right;"><small>
+	This is a documentation from 
+	<a href="http://www.pob-technology.com">
+	<img src="LOGO_POB.JPG" align="middle" border="0"></a> All rights reserved.
+	</small></address>
+	
+</center>
+
+</html>

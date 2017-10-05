@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Librairie POB-Robotics-Suite: Librairie POB-Robotics-Suite</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.7.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li class="current"><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<h1>Librairie POB-Robotics-Suite </h1>  </div>
+</div>
+<div class="contents">
+<h3 class="version">v1.O </h3><hr/>
+<h2><a class="anchor" id="Matériel"></a>
+du POB-Robotics-Suite :</h2>
+<p>Le POB-Robotics-Suite est un puissant robot : L'électronique, la mécanique et le logiciel vous permettent de gérer les capteurs, les actionneurs et réaliser les actions de vos programmes !</p>
+<p><b>Le matériel dispose de :</b></p>
+<ul>
+<li>8 ports pour connecter capteurs et actionneurs.</li>
+<li>Chaque port fournit alimentation, masse, entrée analogique, entrée/sortie numérique et bus i2c.</li>
+<li>8 connecteurs pour servomoteurs standard.</li>
+<li>1 connecteur usb (usb vers port série).</li>
+<li>2 moteurs à courant continu.</li>
+<li>Chaque moteur est contrôlé en vitesse et en position par une roue codeuse.</li>
+<li>2 microcontrôleurs (chaque microcontrôleur est un ARM7TDMI).</li>
+</ul>
+<p><b>Les microcontrôleurs :</b></p>
+<ul>
+<li>Un Microcontrôleur contient le processeur ARM7, la mémoire RAM, la mémoire flash (pour stocker le programme) et les périphériques d'entrées/sorties.</li>
+<li>Le microcontrôleur gére les moteurs, les capteurs et le comportement de votre programme...</li>
+<li>Le POB-Robotics-Suite est piloté par 2 microcontrôleur nommé UC1 et UC2.</li>
+<li>Vous programmez sur UC1 avec les logiciels POB-TOOLS ou RISBEE.</li>
+<li>Le microcontrôleur UC2 gére le bas niveau : les 2 moteurs cc, les 8 servomotors et les roues codeuses. UC2 est flashé à POB.</li>
+<li>Chaque microcontrôleur a 8 Koctets de ram et 32 Koctets de flash.</li>
+</ul>
+<h2><a class="anchor" id="intro"></a>
+Introduction à la librairie :</h2>
+<p>La librairie POB-Robotics-Suite fournit des fonctions pour utiliser le robot en langage C :</p>
+<ul>
+<li>Gestion des capteurs : <a class="el" href="_sensor_8h.html#sensor">lumière, distance...</a>,</li>
+<li>Entrées analogique : <a class="el" href="analog_8h.html#analog">fonctions analogiques</a>,</li>
+<li>Entrées/sorties numérique : <a class="el" href="io_8h.html#io">fonctions d'entrées/sorties</a>,</li>
+<li>Communications série : <a class="el" href="i2c_8h.html#i2c">bus I2C</a> and <a class="el" href="uart_8h.html#uart">uarts</a>,</li>
+<li>Moteurs et Roues codeuses : <a class="el" href="_motion_8h.html#uccomm">Fonctions moteurs</a>,</li>
+<li>Gestion des servomoteurs ( <a class="el" href="_motion_8h.html#servo">Servomoteurs</a>),</li>
+<li>Mémoire Eeprom : <a class="el" href="eeprom_8h.html#eeprom">fonctions eeprom</a>,</li>
+<li>Ecran LCD : <a class="el" href="lcd_8h.html#lcd">Fonctions Lcd</a>,</li>
+<li>Communication sans-fil : <a class="el" href="wifi_8h.html#wifi">réseau Wifi</a>,</li>
+<li>et fonctions diverses : <a class="el" href="timer_8h.html#timer">Fonctions de temps</a>, <a class="el" href="utils_8h.html#utils">utilitaires</a> ...</li>
+</ul>
+<h2><a class="anchor" id="using"></a>
+Utiliser la librairie :</h2>
+<p>Vous devez installer POBTOOLS et le compilateur gcc yagarto. Les deux logiciels sont fournis sur le cdrom livré avec le robot.</p>
+<p>Vous pouvez copier/coller le code suivant pour tester votre installation :</p>
+<div class="fragment"><pre class="fragment"><span class="preprocessor"> #include &lt;<a class="code" href="pob_robotic_suite_8h.html" title="Fichier En tête principale du POB-Robotics-Suite.">pobRoboticSuite.h</a>&gt;</span>
+
+ <span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)
+ {
+    <span class="comment">// Initialisation du microcontrôleur du robot :</span>
+    <a class="code" href="pob_robotic_suite_8h.html#a9c7b6f7049447d5d9103ab928bdb4dd2" title="Initialiser le microcontrôleur du POB-Robotics-Suite.">InitCpu</a>();
+
+    <span class="comment">// Initialisation de l&#39;UART 0 avec le débit 115200 :</span>
+    <a class="code" href="uart_8h.html#a93cbc1428f9379fca79558ff9b7b38a6" title="Initialiser l&amp;#39;UART0 (USB).">InitUART0</a>(115200);
+
+    <span class="comment">// Initialisation du robot et des capteurs :</span>
+    <a class="code" href="_sensor_8h.html#a43a000f01e2871fa6ce80b03d7fbb0bf" title="Initialiser le matériel du POB-Robotics-Suite.">InitRobot</a>();
+
+    <a class="code" href="utils_8h.html#a1451e9b1f155fe7186d94be0b392f88e" title="Envoyer une chaîne de caractères sur l&amp;#39;UART0.">SendString</a>(<span class="stringliteral">&quot;Hello world from POB-Robotics-Suite!&quot;</span>);
+
+    <span class="keywordflow">while</span>(1) ;
+
+    <span class="keywordflow">return</span> 0;
+ }
+</pre></div><h2><a class="anchor" id="contact"></a>
+Contact</h2>
+<p>Si vous avez des questions, des remarques ou des suggestions, vous pouvez envoyer un mail à <a href="mailto:contact@pob-technology.com">contact@pob-technology.com</a> : - ) </p>
+</div>
+<!-- 
+	Author : Baptiste Burles. POB-Technology
+	Date : 10/10/2005
+	
+	This is the html footer for the Doxygen doc.
+	
+-->
+<html>
+
+<p>
+
+<center>
+	<hr size="1"><address style="align: right;"><small>Generated by&nbsp;
+	<a href="http://www.doxygen.org/index.html">
+	<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> </small></address>
+	
+	
+	<address style="align: right;"><small>
+	This is a documentation from 
+	<a href="http://www.pob-technology.com">
+	<img src="LOGO_POB.JPG" align="middle" border="0"></a> All rights reserved.
+	</small></address>
+	
+</center>
+
+</html>

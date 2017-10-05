@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Librairie POB-Robotics-Suite: Référence du fichier VEXpander.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.7.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&nbsp;de&nbsp;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Portée&nbsp;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<h1>Référence du fichier VEXpander.h</h1>  </div>
+</div>
+<div class="contents">
+
+<p>VEX port expander.  
+<a href="#_details">Plus de détails...</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UInt16&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_e_xpander_8h.html#a4e4604d68851db2d0d683f56f74f5be3">GetAnalogFromVEXpander</a> (UInt8 port, UInt8 slot)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_e_xpander_8h.html#a2c9d4c163f4217101061c209ec1a26f0">InitDigitalIOFromVEXpander</a> (UInt8 port, UInt8 slot, <a class="el" href="_mcu_i_o_8h.html#a8fe711c8476ef963165836b64cb6df0c">DIGITAL_WAY</a> way)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UInt8&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_e_xpander_8h.html#a0f714a442c1263710c5b2f278f90c2bf">GetDigitalIOFromVEXpander</a> (UInt8 port, UInt8 slot)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_e_xpander_8h.html#aa59ce5412f137ebb6636d2617cc44456">SetDigitalIOFromVEXpander</a> (UInt8 port, UInt8 slot)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_e_xpander_8h.html#adfc7387edac7bae672604c6dbaa5cccd">ClearDigitalIOFromVEXpander</a> (UInt8 port, UInt8 slot)</td></tr>
+<tr><td colspan="2"><div class="groupHeader">VEX Encoder.</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrpebc4ae972df4d69a0631768d3b23e40b"></a>Use the VEX Encoder sensor with the VEXpander. </p>
+</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_e_xpander_8h.html#aef10b0de901969d4de048ae46d4b20de">InitEncoderFromVEXPander</a> (UInt8 port, UInt8 numencoder, UInt8 port1, UInt8 port2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UInt8&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_e_xpander_8h.html#af0d5f7f4eb2228cdb429fedae762ba44">GetEncoderPulseTimeFromVEXpander</a> (UInt8 port, UInt8 numencoder)</td></tr>
+<tr><td colspan="2"><div class="groupHeader">VEX Ultrasonic.</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrpa13065aeaac95dc8b362c1b542afc203"></a>Use the VEX Ultrasonic sensor with the VEXpander. </p>
+</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_e_xpander_8h.html#ac9a617bd9bfbbb76bfbc29465402a222">InitUltrasonicFromVEXPander</a> (UInt8 port, UInt8 numsensor, UInt8 port_in, UInt8 port_out)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_e_xpander_8h.html#a2f05ed220960ef6a50724eb6102a14c2">StartUltrasonicFromVEXpander</a> (UInt8 port, UInt8 numsensor)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">UInt8&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v_e_xpander_8h.html#a290be32d2637e52dd1c1cf512f62af4c">GetUltrasonicTimeFromVEXpander</a> (UInt8 port, UInt8 numsensor)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Description détaillée</h2>
+<p>VEX port expander. </p>
+<p><a class="anchor" id="vexpander"></a></p>
+<p>The VEXpander is a hardware compatible with all the VEX sensor. </p>
+<hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="adfc7387edac7bae672604c6dbaa5cccd"></a><!-- doxytag: member="VEXpander.h::ClearDigitalIOFromVEXpander" ref="adfc7387edac7bae672604c6dbaa5cccd" args="(UInt8 port, UInt8 slot)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ClearDigitalIOFromVEXpander </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>slot</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4e4604d68851db2d0d683f56f74f5be3"></a><!-- doxytag: member="VEXpander.h::GetAnalogFromVEXpander" ref="a4e4604d68851db2d0d683f56f74f5be3" args="(UInt8 port, UInt8 slot)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UInt16 GetAnalogFromVEXpander </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>slot</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0f714a442c1263710c5b2f278f90c2bf"></a><!-- doxytag: member="VEXpander.h::GetDigitalIOFromVEXpander" ref="a0f714a442c1263710c5b2f278f90c2bf" args="(UInt8 port, UInt8 slot)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UInt8 GetDigitalIOFromVEXpander </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>slot</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af0d5f7f4eb2228cdb429fedae762ba44"></a><!-- doxytag: member="VEXpander.h::GetEncoderPulseTimeFromVEXpander" ref="af0d5f7f4eb2228cdb429fedae762ba44" args="(UInt8 port, UInt8 numencoder)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UInt8 GetEncoderPulseTimeFromVEXpander </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>numencoder</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a290be32d2637e52dd1c1cf512f62af4c"></a><!-- doxytag: member="VEXpander.h::GetUltrasonicTimeFromVEXpander" ref="a290be32d2637e52dd1c1cf512f62af4c" args="(UInt8 port, UInt8 numsensor)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UInt8 GetUltrasonicTimeFromVEXpander </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>numsensor</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2c9d4c163f4217101061c209ec1a26f0"></a><!-- doxytag: member="VEXpander.h::InitDigitalIOFromVEXpander" ref="a2c9d4c163f4217101061c209ec1a26f0" args="(UInt8 port, UInt8 slot, DIGITAL_WAY way)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InitDigitalIOFromVEXpander </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>slot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_mcu_i_o_8h.html#a8fe711c8476ef963165836b64cb6df0c">DIGITAL_WAY</a>&nbsp;</td>
+          <td class="paramname"> <em>way</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aef10b0de901969d4de048ae46d4b20de"></a><!-- doxytag: member="VEXpander.h::InitEncoderFromVEXPander" ref="aef10b0de901969d4de048ae46d4b20de" args="(UInt8 port, UInt8 numencoder, UInt8 port1, UInt8 port2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InitEncoderFromVEXPander </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>numencoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac9a617bd9bfbbb76bfbc29465402a222"></a><!-- doxytag: member="VEXpander.h::InitUltrasonicFromVEXPander" ref="ac9a617bd9bfbbb76bfbc29465402a222" args="(UInt8 port, UInt8 numsensor, UInt8 port_in, UInt8 port_out)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InitUltrasonicFromVEXPander </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>numsensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port_out</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa59ce5412f137ebb6636d2617cc44456"></a><!-- doxytag: member="VEXpander.h::SetDigitalIOFromVEXpander" ref="aa59ce5412f137ebb6636d2617cc44456" args="(UInt8 port, UInt8 slot)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetDigitalIOFromVEXpander </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>slot</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2f05ed220960ef6a50724eb6102a14c2"></a><!-- doxytag: member="VEXpander.h::StartUltrasonicFromVEXpander" ref="a2f05ed220960ef6a50724eb6102a14c2" args="(UInt8 port, UInt8 numsensor)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StartUltrasonicFromVEXpander </td>
+          <td>(</td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt8&nbsp;</td>
+          <td class="paramname"> <em>numsensor</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<!-- 
+	Author : Baptiste Burles. POB-Technology
+	Date : 10/10/2005
+	
+	This is the html footer for the Doxygen doc.
+	
+-->
+<html>
+
+<p>
+
+<center>
+	<hr size="1"><address style="align: right;"><small>Generated by&nbsp;
+	<a href="http://www.doxygen.org/index.html">
+	<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> </small></address>
+	
+	
+	<address style="align: right;"><small>
+	This is a documentation from 
+	<a href="http://www.pob-technology.com">
+	<img src="LOGO_POB.JPG" align="middle" border="0"></a> All rights reserved.
+	</small></address>
+	
+</center>
+
+</html>
