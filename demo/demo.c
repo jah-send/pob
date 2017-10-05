@@ -8,10 +8,15 @@
 
  * @author Foucault Alisson
  */ 
+
+
 #include <string.h>
 #include <pob-eye.h>
 #include "pad.h"
 #include "bitmap.h"
+
+#define         WIDTH_FRAME   160
+#define         HEIGHT_FRAME   120
 
 void reverse(char s[])
 {
@@ -41,6 +46,41 @@ void itoa(int n, char s[])
         reverse(s);
 }
 
+UInt8 getSumOfReds(UInt8 * rgbFrame)
+{
+        int i;
+        sum = 0;
+        for (i=0; i<WIDTH_FRAME * HEIGHT_FRAME; i++)
+        {
+                sum += GetRed(rgbFrame[i]); 
+        }
+
+        return sum;
+}
+
+UInt8 getSumOfBlues(rgbFrame)
+{
+        int i;
+        sum = 0;
+        for (i=0; i<WIDTH_FRAME * HEIGHT_FRAME; i++)
+        {
+                sum += GetBlue(rgbFrame[i]); 
+        }
+
+        return sum;
+}
+
+UInt8 getSumOfGreens(rgbFrame)
+{
+        int i;
+        sum = 0;
+        for (i=0; i<WIDTH_FRAME * HEIGHT_FRAME; i++)
+        {
+                sum += GetGreen(rgbFrame[i]); 
+        }
+
+        return sum;
+}
 // external functions declarations (for PrintTextOnPobLCD)
 extern void InitAsciiBuffer();
 extern void PrintTextOnPobLCD(int row, int col, char *string, UInt8 *Screen_Buffer);
