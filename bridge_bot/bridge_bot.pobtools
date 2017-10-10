@@ -1,0 +1,24 @@
+# pobtools project
+pobtools.version=4
+target.name=./bridge_bot.hex
+sources.number=2
+sources.0=./bridge_bot.c
+sources.1=./Functions.c
+bmps.number=7
+bmps.0=./bitmap/biga.bmp
+bmps.1=./bitmap/cross.bmp
+bmps.2=./bitmap/king.bmp
+bmps.3=./bitmap/noforms.bmp
+bmps.4=./bitmap/noforms.bmp
+bmps.5=./bitmap/tower.bmp
+bmps.6=./bitmap/triangle.bmp
+patterns.number=7
+patterns.0=./pattern/0_cross.bmp
+patterns.1=./pattern/1_BigA.bmp
+patterns.2=./pattern/2_king.bmp
+patterns.3=./pattern/3_tower.bmp
+patterns.4=./pattern/4_trefle.bmp
+patterns.5=./pattern/5_triangle.bmp
+patterns.6=./pattern/6_circle.bmp
+sdk=pobeye2
+lang=C
