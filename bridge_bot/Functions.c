@@ -11,6 +11,7 @@
 #include <stdlib.h>
 #include "pad.h"
 #include "math.h"
+#include "bitmap.h"
 
 
 // Brief This initialize the PobProto
@@ -31,16 +32,16 @@ static UInt8		 ASCII_Buffer[LCD_WIDTH*LCD_HEIGHT*BITS]; // Buffer to stock the a
 
 // Set the bitmap  picture of the first 127 ASCII Char in ASCII_GRAPHIC_BUFFER
 // ASCII_GRAPHIC_BUFFER will be used to get the pictures of characters to display on the LCD
-/*
+
 void InitAsciiBuffer() 
 {
 	GraphicBuffer ASCII_GRAPHIC_BUFFER;
 	
 	InitGraphicBuffer(&ASCII_GRAPHIC_BUFFER,LCD_WIDTH,LCD_HEIGHT,ONE_BIT,ASCII_Buffer); 
 	ClearGraphicBuffer(&ASCII_GRAPHIC_BUFFER);
-	DrawBitmap(0,0, 146,bitmap,&ASCII_GRAPHIC_BUFFER); //bitmap is an array built by pob-tools
+	DrawBitmap(0,0,IDB_ASCII,bitmap,&ASCII_GRAPHIC_BUFFER); //bitmap is an array built by pob-tools
 }
-*/	
+	
 /****************************************************************************************************************************
 * PrintTextOnPobLCD : displays a string in the screen buffer
 *
