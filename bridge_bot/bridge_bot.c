@@ -10,6 +10,7 @@
  */
 
 #include <pob-eye.h>
+#include <string.h>
 
 // Include bitmap list and dictionnary of forms
 #include "pattern.h"
@@ -52,8 +53,8 @@ int main (void)
 	ClearGraphicBuffer(&ScreenBuffer);
 	DrawLCD(&ScreenBuffer);
 
-    // Init Ascii buffer, use to write in the LCD screen with PrintTextOnPobLCD function
-    InitAsciiBuffer();
+	// Init Ascii buffer, use to write in the LCD screen with PrintTextOnPobLCD function
+	InitAsciiBuffer();
 
 	// demo code for reference
 	PrintTextOnPobLCD(1,2, "North", LCD_Buffer);
@@ -118,3 +119,31 @@ int main (void)
 	return 0;
 }
 
+char * get_new_direction(char * curr_direction, UInt8 turn)
+{
+	if (turn == LEFT)
+	{
+		if (strcmp(curr_direction, 'North')==0)
+			return "West";
+		else if (strcmp(curr_direction, 'East')==0)
+			return "North";
+		else if (strcmp(curr_direction, 'South')==0)
+			return "East";
+		else
+			return "South";
+	}
+	else if (turn == RIGHT)
+	{
+		if (strcmp(curr_direction, 'North')==0)
+			return "East";
+		else if (strcmp(curr_direction, 'East')==0)
+			return "South";
+		else if (strcmp(curr_direction, 'South')==0)
+			return "West";
+		else
+			return "North";
+	}
+	else
+		return curr_direction;
+
+}
