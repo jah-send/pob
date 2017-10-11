@@ -20,11 +20,12 @@
 extern void InitAsciiBuffer();
 extern void PrintTextOnPobLCD(int row, int col, char *string, UInt8 *Screen_Buffer);
 extern void HLightText(int row, int col, int size, UInt8 *Screen_Buffer);
-
+char * get_new_direction(char * curr_direction, UInt8 turn);
+void turn_right_angle(UInt8 turn);
 int main (void)
 {	
 	UInt8 i=0,Nb_Identify=0;
-
+	char * curr_direction = "North";
 	// List of form
 	Form ListOfForm[MAX_OF_FORM];
 
@@ -41,7 +42,10 @@ int main (void)
 	InitCameraPobeye2();
 	InitLCD();	
 	InitPobProto();
-	SwitchOnAllServo();
+	// set camera to look downward (15? degrees)
+	SwitchOnAllServo(); 
+	SetServoMotor(0, 15);
+
 
 	// Get the pointer of the red,green and blue video buffer
 	FrameFromCam = GetRGBFrame();
@@ -62,10 +66,13 @@ int main (void)
 	WaitMs(500);
 	SetLed();
 	WaitUs(500000);
+	        InitUART0(115200);
+
 	ClearLed();
 
 	while(1)
 	{		
+		
 		// grab the RGB components
 		GrabRGBFrame();				
 
@@ -93,7 +100,8 @@ int main (void)
 					break;
 
 				case IDP_3_TOWER:
-
+					turn_right_angle(RIGHT);
+					curr_direction = get_new_direction(curr_direction, RIGHT);
 					break;
 
 				case IDP_4_TREFLE:
@@ -101,15 +109,18 @@ int main (void)
 					break;
 
 				case IDP_5_TRIANGLE:
+					MoveBot(RUN);
 
 					break;
 				case IDP_6_CIRCLE:
-
-					MoveBot(RUN);
+					turn_right_angle(LEFT);
+					curr_direction = get_new_direction(curr_direction, LEFT);
 					break;
 				default:
 					break;
-			}				
+			}			
+			PrintTextOnPobLCD(1,2, curr_direction, LCD_Buffer);	
+			DrawLCD(&ScreenBuffer);
 		}		
 		if (Nb_Identify == 0)
 		{
@@ -119,31 +130,45 @@ int main (void)
 	return 0;
 }
 
+
+void turn_right_angle(UInt8 turn)
+{
+	// TODO Figure out a better timinig for turning 90 degrees
+	InitTimer0(1500000);
+	while(1)
+	  {
+		  	MoveBot(turn);
+               if(IsTimer0Overflow()==1)
+                {
+	                return;
+                }
+        }
+}
 char * get_new_direction(char * curr_direction, UInt8 turn)
 {
 	if (turn == LEFT)
 	{
-		if (strcmp(curr_direction, 'North')==0)
-			return "West";
-		else if (strcmp(curr_direction, 'East')==0)
-			return "North";
-		else if (strcmp(curr_direction, 'South')==0)
-			return "East";
+		if (strcmp(curr_direction, "North")==0)
+			curr_direction = "West\n";
+		else if (strcmp(curr_direction, "East\n")==0)
+			curr_direction = "North";
+		else if (strcmp(curr_direction, "South")==0)
+			curr_direction = "East\n";
 		else
-			return "South";
+			curr_direction = "South";
 	}
 	else if (turn == RIGHT)
 	{
-		if (strcmp(curr_direction, 'North')==0)
-			return "East";
-		else if (strcmp(curr_direction, 'East')==0)
-			return "South";
-		else if (strcmp(curr_direction, 'South')==0)
-			return "West";
+		if (strcmp(curr_direction, "North")==0)
+			curr_direction = "East\n";
+		else if (strcmp(curr_direction, "East\n")==0)
+			curr_direction = "South";
+		else if (strcmp(curr_direction, "South")==0)
+			curr_direction = "West\n";
 		else
-			return "North";
+			curr_direction = "North";
 	}
-	else
-		return curr_direction;
+	
+	return curr_direction;
 
 }
