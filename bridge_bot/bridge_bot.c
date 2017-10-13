@@ -1,15 +1,7 @@
-/** \anchor form1
- *
- * @brief Form recognition. 
- *
- * @file
+/* Embedded Systems CS4397
+	Group 1: Joshua Honeycutt, Dani Raznikov, Alwin Mathew, Steve Coopman
+	
 
- Example of form recognition and print the result on UART and the LCD Screen.
-
- * @author Foucault Alisson
- */
-
-/*
 Reference: Defined in pattern.h
 #define IDP_0_CROSS 1
 #define IDP_1_BIGA 2
