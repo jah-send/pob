@@ -2,6 +2,10 @@
 #include <stdio.h>
 
 void setCommand(char* p, char s) {
+	
+	p[0] = 0;
+	p[1] = 0;
+	p[2] = 0;
 	// three-byte format: 11111110 - 00AAAAAA - ACCDDDDD
 	// if the engine is addressed with 23 (in binary: 10111), then AAAAAAA will be 0010111
 
@@ -47,6 +51,9 @@ void setCommand(char* p, char s) {
 		*(p + 2) |= 1 << 1;
 		*(p + 2) |= 1;
 		break;
+	case 't': // r - toggle direction: 000 0001
+		*(p + 2) |= 1;
+		break;
 	case 'u' : // u - speed up by one:  100 0110
 		*(p + 2) |= 1 << 6;
 		*(p + 2) |= 1 << 2;   
@@ -82,12 +89,13 @@ void print_usage() {
 		  "1. HORN - to use the horn.\n "
 		  "2. BELL - to ring the bell.\n "
 		  "3. FORWARD - to go forward.\n "
-		  "4. REVERSE - to go to the reverse direction.\n"
+		  "4. REVERSE - to go to the reverse direction.\n "
 		  "5. FASTER - to go a bit faster.\n "
 		  "6. SLOWER - to go a bit slower.\n "
 		  "7. BRAKE - to use the brakes.\n "
-		  "8. BOOST - to use a speed boost.\n"
-		  "9. QUIET - to let off the sound.\n"
+		  "8. BOOST - to use a speed boost.\n "
+		  "9. QUIET - to let off the sound.\n "
+		  "10. TOGGLE - toggle direction.\n "
 		  "Enter EXIT to quit.";
 	fprintf(stdout, msg);
 	
@@ -98,9 +106,7 @@ int main()
 	print_usage();
     // Each command is in a three-byte command
 	char bytes_to_send[3];
-	bytes_to_send[0] = 0;
-	bytes_to_send[1] = 0;
-	bytes_to_send[2] = 0;
+
 
 
 	// Declare variables and structures
@@ -180,6 +186,8 @@ int main()
 			cmd='w';
 		else if (!strncmp(line, "QUIET", 5))
 			cmd='l';
+		else if (!strncmp(line, "TOGGLE", 6))
+			cmd='t';
 		else
 		{
 			fprintf(stdout, "Unsupported Command!\n");
