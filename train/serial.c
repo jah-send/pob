@@ -47,15 +47,13 @@ void setCommand(char* p, char s) {
 		*(p + 2) |= 1 << 1;
 		*(p + 2) |= 1;
 		break;
-	case 'u' : // u - speed up by one:  110 0110
+	case 'u' : // u - speed up by one:  100 0110
 		*(p + 2) |= 1 << 6;
-		*(p + 2) |= 1 << 5;
 		*(p + 2) |= 1 << 2;   
 		*(p + 2) |= 1 << 1;   
 		break;
-	case 'd' : // d - speed down by one : 110 0100
+	case 'd' : // d - speed down by one : 100 0100
 		*(p + 2) |= 1 << 6;
-		*(p + 2) |= 1 << 5;
 		*(p + 2) |= 1 << 2; 
 		break;
 	case 'w' : // w - boost WOW! : 000 0100
@@ -65,6 +63,12 @@ void setCommand(char* p, char s) {
 		*(p + 2) |= 1 << 2;
 		*(p + 2) |= 1 << 1;
 		*(p + 2) |= 1;
+		break;
+	case 'l': // l - let off sounds 001 1110
+		*(p + 2) |= 1 << 4;   
+		*(p + 2) |= 1 << 3;  
+		*(p + 2) |= 1 << 2;   
+		*(p + 2) |= 1 << 1;  
 		break;
 	default: break;
 	
