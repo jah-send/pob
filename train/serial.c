@@ -22,29 +22,80 @@ void setCommand(char* p, char s) {
 
 	// the third byte: 1CCDDDDD
 	*(p + 2) |= 1 << 7;
+/*
+@TODO 
+1. Start the engine
+2. Stop the engine
+4. Horn
+5. Faster
+6. Slower
 
+*/
 	switch (s) {
 		// remain part for the third byte
-	case 'h': // h - horn 1:   0011100
-		*(p + 2) |= 1 << 2;
+	case 'h': // h - horn : 001 1100   
+		*(p + 2) |= 1 << 2;   
 		*(p + 2) |= 1 << 3;
 		*(p + 2) |= 1 << 4;
 		break;
-
+	case 'b': // b - bell : 001 1101
+		*(p + 2) |= 1 << 2;
+		*(p + 2) |= 1 << 3;
+		*(p + 2) |= 1 << 4;
+		*(p + 2) |= 1;
+		break;
+	case 'f' : // f - forward direction : 000 0000
+		*(p+2) &= 0;
+		break;
+	case 'u' : // u - speed up by one:  110 0110
+		*(p + 2) |= 1 << 6;
+		*(p + 2) |= 1 << 5;
+		*(p + 2) |= 1 << 2;   
+		*(p + 2) |= 1 << 1;   
+		break;
+	case 'd' : // d - speed down by one : 110 0100
+		*(p + 2) |= 1 << 6;
+		*(p + 2) |= 1 << 5;
+		*(p + 2) |= 1 << 2; 
+		break;
+	case 'w' : // w - boost WOW! : 000 0100
+		*(p + 2) |= 1 << 2;
+		break;
+	case 'q': // q - brake : 000 0111
+		*(p + 2) |= 1 << 2;
+		*(p + 2) |= 1 << 1;
+		*(p + 2) |= 1;
+		break;
 	default: break;
+	
 	}
 
 }
 
+void print_usage() {
+	
+	char * msg = "Welcome to Train Control System!\n "
+		  "Use the following commands to control the train: \n "
+		  "1. HORN - to use the horn.\n "
+		  "2. BELL - to ring the bell.\n "
+		  "3. FORWARD - to go forward.\n "
+		  "4. FASTER - to go a bit faster.\n "
+		  "5. SLOWER - to go a bit slower.\n "
+		  "6. BRAKE - to use the brakes.\n "
+		  "7. BOOST - to use a speed boost.\n"
+		  "Enter EXIT to quit.";
+	fprintf(stdout, msg);
+	
+}
 int main()
 {
+	print_usage();
     // Each command is in a three-byte command
 	char bytes_to_send[3];
 	bytes_to_send[0] = 0;
 	bytes_to_send[1] = 0;
 	bytes_to_send[2] = 0;
 
-	setCommand(bytes_to_send, 'h');
 
 	// Declare variables and structures
 	HANDLE hSerial;
@@ -99,17 +150,43 @@ int main()
 		CloseHandle(hSerial);
 		return 1;
 	}
-
-	// Send specified text (remaining command line arguments)
-	DWORD bytes_written, total_bytes_written = 0;
-	fprintf(stderr, "Sending bytes...");
-	if (!WriteFile(hSerial, bytes_to_send, 3, &bytes_written, NULL))
+	
+	char line[10] = ""; // contain the line to be read
+	char cmd; // character to hold the command
+	while (fgets(line, sizeof(line), stdin)  && strncmp(line, "EXIT", 4))
 	{
-		fprintf(stderr, "Error\n");
-		CloseHandle(hSerial);
-		return 1;
+		fprintf(stdout, line);
+		if (!strncmp (line, "HORN", 4))
+			cmd='h';
+		else if (!strncmp (line, "BELL", 4))
+			cmd='b';
+		else if (!strncmp (line, "FORWARD", 7))
+			cmd='f';
+		else if (!strncmp (line, "FASTER", 6))
+			cmd='u';
+		else if (!strncmp (line, "SLOWER", 6))
+			cmd='d';
+		else if (!strncmp (line, "BRAKE", 5))
+			cmd='q';
+		else if (!strncmp (line, "BOOST", 5))
+			cmd='w';
+		else
+		{
+			fprintf(stdout, "Unsupported Command!\n");
+			continue;
+		}
+		
+		setCommand(bytes_to_send, cmd);\
+		DWORD bytes_written, total_bytes_written = 0;
+		fprintf(stdout, "Sending command...");
+		if (!WriteFile(hSerial, bytes_to_send, 3, &bytes_written, NULL))
+		{
+			fprintf(stderr, "Error\n");
+			CloseHandle(hSerial);
+			return 1;
+		}
+		fprintf(stdout, "Done!");
 	}
-	fprintf(stderr, "%d bytes written\n", bytes_written);
 
     // Close serial port
 	fprintf(stderr, "Closing serial port...");
@@ -119,7 +196,6 @@ int main()
 		return 1;
 	}
 	fprintf(stderr, "OK\n");
-
 	// exit normally
 
 	return 0;
