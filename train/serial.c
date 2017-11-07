@@ -55,18 +55,6 @@ void setCommand(char* p, char s) {
 	case 'l': // l - let-off sound : 1001 1110
 		*(p + 2) = 0x9e; 
 		break;
-	case 'z': // z - aux1 off : 1000 1000
-		*(p + 2) = 0x88;
-		break;
-	case 'x': // x - aux1 on : 1000 1011
-		*(p + 2) = 0x8b;
-		break;
-	case 'c': // c - aux2 off 1000 1100
-		*(p + 2) = 0x8c;
-		break;
-	case 'v': // v - aux 2 on 1000 1111
-		*(p + 2) = 0x8f;
-		break;
 	default: break;
 
 	}
@@ -179,14 +167,6 @@ int main()
 			cmd='l';
 		else if (!strncmp(line, "TOGGLE", 6))
 			cmd='t';
-		else if (!strncmp(line, "AUX1OFF", 7))
-			cmd='z';
-		else if (!strncmp(line, "AUX1ON", 6))
-			cmd='x';
-		else if (!strncmp(line, "AUX2OFF", 7))
-			cmd='c';
-		else if (!strncmp(line, "AUX2ON", 6))
-			cmd='v';
 		else
 		{
 			fprintf(stdout, "Unsupported Command!\n");
