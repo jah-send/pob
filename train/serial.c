@@ -143,30 +143,30 @@ int main()
 	while (fgets(line, sizeof(line), stdin)  && strncmp(line, "EXIT", 4))
 	{
 		// set cmd to hold the command to be set
-		if (!strncmp (line, "HORN", 4))
-			cmd='h';
-		else if (!strncmp (line, "STOP", 4))
-			cmd='s';
-		else if (!strncmp (line, "START", 5))
-			cmd='g';
-		else if (!strncmp (line, "BELL", 4))
+		if (!strncmp (line, "BELL", 4))
 			cmd='b';
-		else if (!strncmp (line, "FORWARD", 7))
-			cmd='f';
-		else if (!strncmp (line, "REVERSE", 6))
-			cmd='r';
-		else if (!strncmp (line, "FASTER", 6))
-			cmd='u';
 		else if (!strncmp (line, "SLOWER", 6))
 			cmd='d';
-		else if (!strncmp (line, "BRAKE", 5))
-			cmd='q';
-		else if (!strncmp (line, "BOOST", 5))
-			cmd='w';
+		else if (!strncmp (line, "FORWARD", 7))
+			cmd='f';
+		else if (!strncmp (line, "START", 5))
+			cmd='g';
+		else if (!strncmp (line, "HORN", 4))
+			cmd='h';
 		else if (!strncmp(line, "LETOFF", 6))
 			cmd='l';
+		else if (!strncmp (line, "BRAKE", 5))
+			cmd='q';
+		else if (!strncmp (line, "REVERSE", 6))
+			cmd='r';
+		else if (!strncmp (line, "STOP", 4))
+			cmd='s';
 		else if (!strncmp(line, "TOGGLE", 6))
 			cmd='t';
+		else if (!strncmp (line, "FASTER", 6))
+			cmd='u';
+		else if (!strncmp (line, "BOOST", 5))
+			cmd='w';
 		else
 		{
 			fprintf(stdout, "Unsupported Command!\n");
