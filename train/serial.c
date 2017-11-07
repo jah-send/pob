@@ -3,6 +3,7 @@
 
 void setCommand(char* p, char s) {
 	
+	// clear the memory
 	p[0] = 0;
 	p[1] = 0;
 	p[2] = 0;
@@ -10,75 +11,64 @@ void setCommand(char* p, char s) {
 	// if the engine is addressed with 23 (in binary: 10111), then AAAAAAA will be 0010111
 
 	// the first byte is OFE
-	*p |= 1 << 1;
-	*p |= 1 << 2;
-	*p |= 1 << 3;
-	*p |= 1 << 4;
-	*p |= 1 << 5;
-	*p |= 1 << 6;
-	*p |= 1 << 7;
+	*p = 0xfe;
 
 	// the second byte: 00AAAAAA
-	//engine addressing code:   000010111
-	*(p + 1) |= 1 ;
-	*(p + 1) |= 1 << 1;
-	*(p + 1) |= 1 << 3;
-
-	// the third byte: 1CCDDDDD
-	*(p + 2) |= 1 << 7;
-/*
-@TODO 
-1. Start the engine
-2. Stop the engine
-*/
+	//engine addressing code:   0000 1011 (and 1 in the third byte)
+	*(p+1) = 0x0b;
+	
 	switch (s) {
 		// remain part for the third byte
-	case 'h': // h - horn : 001 1100   
-		*(p + 2) |= 1 << 2;   
-		*(p + 2) |= 1 << 3;
-		*(p + 2) |= 1 << 4;
+	case 's': // s - stop - set abs. speed to 0: 1110 0000
+		*(p + 2) = 0xe0;
 		break;
-	case 'b': // b - bell : 001 1101
-		*(p + 2) |= 1 << 2;
-		*(p + 2) |= 1 << 3;
-		*(p + 2) |= 1 << 4;
-		*(p + 2) |= 1;
+	case 'g': // g - start (go) - set abs. speed to 15 : 1110 1111
+		*(p+2) = 0xef;
 		break;
-	case 'f' : // f - forward direction : 000 0000
-		*(p+2) &= 0;
+	case 'h': // h - horn : 1001 1100   
+		*(p + 2) = 0x9c;
 		break;
-	case 'r': // r - reverse direction: 000 0011
-		*(p + 2) |= 1 << 1;
-		*(p + 2) |= 1;
+	case 'b': // b - bell : 1001 1101
+		*(p + 2) = 0x9d;
 		break;
-	case 't': // r - toggle direction: 000 0001
-		*(p + 2) |= 1;
+	case 'f' : // f - forward direction : 1000 0000
+		*(p+2) = 0x80;
 		break;
-	case 'u' : // u - speed up by one:  100 0110
-		*(p + 2) |= 1 << 6;
-		*(p + 2) |= 1 << 2;   
-		*(p + 2) |= 1 << 1;   
+	case 'r': // r - reverse direction: 1000 0011
+		*(p + 2) = 0x83;
 		break;
-	case 'd' : // d - speed down by one : 100 0100
-		*(p + 2) |= 1 << 6;
-		*(p + 2) |= 1 << 2; 
+	case 't': // r - toggle direction: 1000 0001
+		*(p + 2) = 0x81;
 		break;
-	case 'w' : // w - boost WOW! : 000 0100
-		*(p + 2) |= 1 << 2;
+	case 'u' : // u - speed up by one: 1100 0110
+		*(p + 2) = 0xc6;
 		break;
-	case 'q': // q - brake : 000 0111
-		*(p + 2) |= 1 << 2;
-		*(p + 2) |= 1 << 1;
-		*(p + 2) |= 1;
+	case 'd' : // d - speed down by one : 1100 0100
+		*(p + 2) = 0xc4;
 		break;
-	case 'l': // l - let off sounds 001 1110
-		*(p + 2) |= 1 << 4;   
-		*(p + 2) |= 1 << 3;  
-		*(p + 2) |= 1 << 2;   
-		*(p + 2) |= 1 << 1;  
+	case 'w' : // w - boost WOW! : 1000 0100
+		*(p + 2) = 0x84;
+		break;
+	case 'q': // q - brake : 1000 0111
+		*(p + 2) = 0x87;
+		break;
+	case 'l': // l - let-off sound : 1001 1110
+		*(p + 2) = 0x9e; 
+		break;
+	case 'z': // z - aux1 off : 1000 1000
+		*(p + 2) = 0x88;
+		break;
+	case 'x': // x - aux1 on : 1000 1011
+		*(p + 2) = 0x8b;
+		break;
+	case 'c': // c - aux2 off 1000 1100
+		*(p + 2) = 0x8c;
+		break;
+	case 'v': // v - aux 2 on 1000 1111
+		*(p + 2) = 0x8f;
 		break;
 	default: break;
-	
+
 	}
 
 }
@@ -86,17 +76,19 @@ void setCommand(char* p, char s) {
 void print_usage() {
 	
 	char * msg = "Use the following commands to control the train: \n "
-		  "1. HORN - to use the horn.\n "
-		  "2. BELL - to ring the bell.\n "
-		  "3. FORWARD - to go forward.\n "
-		  "4. REVERSE - to go to the reverse direction.\n "
-		  "5. FASTER - to go a bit faster.\n "
-		  "6. SLOWER - to go a bit slower.\n "
-		  "7. BRAKE - to use the brakes.\n "
-		  "8. BOOST - to use a speed boost.\n "
-		  "9. QUIET - to let off the sound.\n "
-		  "10. TOGGLE - toggle direction.\n "
-		  "Enter EXIT to quit.";
+		  "* START - to start the train.\n "
+		  "* STOP - to stop the train.\n "
+		  "* HORN - to use the horn.\n "
+		  "* BELL - to ring the bell.\n "
+		  "* TOGGLE - toggle direction.\n "
+		  "* FORWARD - to go forward.\n "
+		  "* REVERSE - to go to the reverse direction.\n "
+		  "* FASTER - to go a bit faster.\n "
+		  "* SLOWER - to go a bit slower.\n "
+		  "* BRAKE - to use the brakes.\n "
+		  "* BOOST - to use a speed boost.\n "
+		  "* LETOFF - to make let-off sound.\n "
+		  "\tEnter EXIT to quit.\n";
 	fprintf(stdout, msg);
 	
 }
@@ -104,18 +96,14 @@ int main()
 {
 	fprintf(stdout,  "Welcome to Train Control System!\n ");
 	print_usage();
-    // Each command is in a three-byte command
 	char bytes_to_send[3];
-
-
 
 	// Declare variables and structures
 	HANDLE hSerial;
 	DCB dcbSerialParams = { 0 };
 	COMMTIMEOUTS timeouts = { 0 };
 
-	// Open the right serial port number, normally on this computer should be COM1
-	fprintf(stderr, "Opening serial port...");
+	// Open the COM1 serial port
 
 	hSerial = CreateFile(
 		"\\\\.\\COM1", GENERIC_READ | GENERIC_WRITE, 0, NULL,
@@ -126,11 +114,8 @@ int main()
 		fprintf(stderr, "Error\n");
 		return 1;
 	}
-	else fprintf(stderr, "OK\n");
 
-
-	// Set device parameters (9600 baud, 1 start bit,
-	// 1 stop bit, no parity)
+	// Set device parameters (9600 baud, 1 start bit, 1 stop bit, no parity)
 	dcbSerialParams.DCBlength = sizeof(dcbSerialParams);
 	if (GetCommState(hSerial, &dcbSerialParams) == 0)
 	{
@@ -138,7 +123,7 @@ int main()
 		CloseHandle(hSerial);
 		return 1;
 	}
-
+	
 	dcbSerialParams.BaudRate = CBR_9600;
 	dcbSerialParams.ByteSize = 8;
 	dcbSerialParams.StopBits = ONESTOPBIT;
@@ -163,13 +148,19 @@ int main()
 		return 1;
 	}
 	
-	char line[10] = ""; // contain the line to be read
+	char line[10] = ""; // the line to be read from stdin
 	char cmd; // character to hold the command
+	
+	// keep reading from stdin until "EXIT" was the input
 	while (fgets(line, sizeof(line), stdin)  && strncmp(line, "EXIT", 4))
 	{
-		fprintf(stdout, line);
+		// set cmd to hold the command to be set
 		if (!strncmp (line, "HORN", 4))
 			cmd='h';
+		else if (!strncmp (line, "STOP", 4))
+			cmd='s';
+		else if (!strncmp (line, "START", 5))
+			cmd='g';
 		else if (!strncmp (line, "BELL", 4))
 			cmd='b';
 		else if (!strncmp (line, "FORWARD", 7))
@@ -184,17 +175,25 @@ int main()
 			cmd='q';
 		else if (!strncmp (line, "BOOST", 5))
 			cmd='w';
-		else if (!strncmp(line, "QUIET", 5))
+		else if (!strncmp(line, "LETOFF", 6))
 			cmd='l';
 		else if (!strncmp(line, "TOGGLE", 6))
 			cmd='t';
+		else if (!strncmp(line, "AUX1OFF", 7))
+			cmd='z';
+		else if (!strncmp(line, "AUX1ON", 6))
+			cmd='x';
+		else if (!strncmp(line, "AUX2OFF", 7))
+			cmd='c';
+		else if (!strncmp(line, "AUX2ON", 6))
+			cmd='v';
 		else
 		{
 			fprintf(stdout, "Unsupported Command!\n");
 			print_usage();
 			continue;
 		}
-		
+		// send command over serial port
 		setCommand(bytes_to_send, cmd);
 		DWORD bytes_written, total_bytes_written = 0;
 		fprintf(stdout, "Sending command...");
@@ -208,14 +207,11 @@ int main()
 	}
 
     // Close serial port
-	fprintf(stderr, "Closing serial port...");
 	if (CloseHandle(hSerial) == 0)
 	{
 		fprintf(stderr, "Error\n");
 		return 1;
 	}
-	fprintf(stderr, "OK.\n");
-	// exit normally
-
+	
 	return 0;
 }
