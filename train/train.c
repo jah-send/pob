@@ -1,6 +1,20 @@
+/* Embedded Systems CS 4397 
+Assignment No. 3
+Group 1:
+Dani Raznikov
+Joshua Honeycutt
+Alwin Mathew
+Steve Coopman
+
+*/
 #include <windows.h>
 #include <stdio.h>
 
+/*Function that sets the bytes to send over to the train system.
+Args:
+	char * p : pointer to the first byte among the 3-bytes that are sent to the train.
+	char s : one character encoding the command input.
+*/
 void setCommand(char* p, char s) {
 	
 	// clear the memory
@@ -60,7 +74,7 @@ void setCommand(char* p, char s) {
 	}
 
 }
-
+/* Function to print the usage of the interface to the user*/
 void print_usage() {
 	
 	char * msg = "Use the following commands to control the train: \n "
@@ -92,14 +106,12 @@ int main()
 	COMMTIMEOUTS timeouts = { 0 };
 
 	// Open the COM1 serial port
-
 	hSerial = CreateFile(
 		"\\\\.\\COM1", GENERIC_READ | GENERIC_WRITE, 0, NULL,
 		OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
-
 	if (hSerial == INVALID_HANDLE_VALUE)
 	{
-		fprintf(stderr, "Error\n");
+		fprintf(stderr, "Error opening the serial port.\n");
 		return 1;
 	}
 
